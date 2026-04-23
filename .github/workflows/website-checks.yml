@@ -45,4 +45,4 @@ jobs:
 
       - name: Build Hugo site
         run: hugo build --minify
-        working-directory: ./static
+        working-directory: ./website

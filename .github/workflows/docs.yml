@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - dev
 
 jobs:
   deploy:
@@ -13,14 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set environment
-        run: |
-          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
-            echo "ENVIRONMENT=prod" >> $GITHUB_ENV
-          else
-            echo "ENVIRONMENT=preprod" >> $GITHUB_ENV
-          fi
-
       - name: Build and deploy doc
         uses: dawidd6/action-ansible-playbook@v2
         with:
@@ -28,5 +19,5 @@ jobs:
           directory: deploy
           vault_password: ${{ secrets.ANSIBLE_VAULT_KEY }}
           options: |
-            -l ${{ env.ENVIRONMENT }}
+            -l prod
           key: ${{ secrets.SSH_PRIVATE_KEY }}
