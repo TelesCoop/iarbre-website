@@ -1,0 +1,138 @@
+site_name: Documentation IA.rbre
+site_url: "https://docs.iarbre.fr/"
+repo_name: "Telescoop/iarbre"
+repo_url: "https://github.com/TelesCoop/iarbre"
+extra:
+  social:
+    - icon: "fontawesome/brands/square-github"
+      link: "https://github.com/TelesCoop/iarbre/tree/dev/docs"
+    - icon: "fontawesome/solid/tree"
+      link: "https://iarbre.fr"
+    - icon: "fontawesome/solid/map"
+      link: "https://carte.iarbre.fr"
+    - icon: "fontawesome/solid/house"
+      link: "https://telescoop.fr"
+  generator: false
+copyright: Copyright &copy; 2020 - 2026 TELESCOOP
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite
+  - footnotes
+  - md_in_html
+  - meta
+  - pymdownx.emoji:
+      emoji_generator: "twemoji"
+      options:
+        custom_icons: []
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: "!!fence_code_format"
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang: ["fr"]
+
+  - git-revision-date-localized
+  - minify:
+      minify_html: true
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+
+nav:
+  - Documentation IA.rbre: index.md
+  - Journal de changements:
+      - Changelog produit: changelog/product.md
+      - Changelog data: changelog/database.md
+  - Méthodologie:
+      - Facteurs de plantabilité: methodology/plantability.md
+      - Atlas des vulnérabitilités: methodology/vulnerability.md
+      - Zones climatiques locales: methodology/lcz.md
+      - Croisement plantabilité et vulnérabilité: methodology/plantability_vulnerability.md
+      - Végéstrate: methodology/vegestrate.md
+  - Backend:
+      - Instructions: back/backend.md
+      - Données de test: back/testing-data.md
+      - Backend docstrings documentation:
+          - Insert Cities and IRIS: api/c01_insert_cities_and_iris.md
+          - Import Data: api/c03_import_data.md
+          - Update Data: api/update_data.md
+          - Compute Factors (raster): api/data_to_raster.md
+          - Compute Plantability Indices (raster): api/compute_plantability_raster.md
+          - Raster plantability to geometry: api/raster_plantability_to_geom.md
+          - Import LCZ: api/import_lcz.md
+          - Import heat vulnerability data: api/import_vulnerability.md
+          - Database utils: api/utils_db.md
+          - Data processing utils: api/utils_data_process.md
+          - Generate MVT: api/generate_mvt.md
+          - Clean MVT: api/clean_mvt.md
+  - Frontend: front.md
+  - Déploiement: deploy.md
+  - Documentation: docs.md
+
+theme:
+  name: "material"
+  language: "fr"
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  custom_dir: "docs/theme/"
+  logo: "assets/images/banner.png"
+  favicon: "assets/images/logo.png"
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Passer au mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Passer au mode clair
+  icon:
+    repo: fontawesome/brands/square-github
+
+extra_css: [assets/stylesheets/extra.css]
