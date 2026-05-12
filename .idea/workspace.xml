@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="91365852-2531-4230-b2e6-e7652157ccfe" name="Changes" comment="" />
+    <list default="true" id="f233cb6d-487d-4cc8-9699-1c4e0c88c3db" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,7 +12,7 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_/Users/grimbsi/Projects/iarbre-website" value="3Cl4GfIywEfnfOFtHsVQOQO03H3" />
+      <entry key="_/Users/grimbsi/Projects/iarbre-website" value="3DBMygB5A1PyMci6VzOEcHIwVQS" />
     </persistenceIdMap>
   </component>
   <component name="EmbeddingIndexingInfo">
@@ -20,27 +23,29 @@
     <urls />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="3Cl4GfIywEfnfOFtHsVQOQO03H3" />
+  <component name="ProjectId" id="3DBMygB5A1PyMci6VzOEcHIwVQS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "/Users/grimbsi/Projects/iarbre-website",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -50,14 +55,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="91365852-2531-4230-b2e6-e7652157ccfe" name="Changes" comment="" />
-      <created>1776946728429</created>
+      <changelist id="f233cb6d-487d-4cc8-9699-1c4e0c88c3db" name="Changes" comment="" />
+      <created>1777751270855</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1776946728429</updated>
-      <workItem from="1776946729762" duration="33000" />
-      <workItem from="1776946771941" duration="60000" />
-      <workItem from="1776946856402" duration="51000" />
+      <updated>1777751270855</updated>
+      <workItem from="1777751278510" duration="103000" />
+      <workItem from="1777751678026" duration="3389000" />
+      <workItem from="1778575082450" duration="299000" />
     </task>
     <servers />
   </component>
