@@ -16,7 +16,7 @@
         clone_path: "{{ repo_clone_path }}"
         repo: "{{ backend_repo }}"
         identity_file_path: "{{ backend_identity_file_path }}"
-        git_track_submodules: true
+        git_track_submodules: false
         branch: "{{ website_branch }}"
     - import_tasks: telescoop-deploy/tasks/install-hugo.yml
     - import_tasks: telescoop-deploy/tasks/setup-nginx.yml

@@ -1,11 +1,12 @@
 backend:
   name: github
   branch: main
-  repo: TelesCoop/iarbre-showcase-content
+  repo: TelesCoop/iarbre-website
   base_url: https://preprod-carte.iarbre.fr
   auth_endpoint: /cms/auth
   squash_merges: true
-media_folder: "assets/uploads"
+media_folder: "website/static/uploads"
+public_folder: "/uploads"
 media_libraries:
   default:
     config:
@@ -20,7 +21,7 @@ media_libraries:
 collections:
   - name: "Actualités"
     label: "Actualités"
-    folder: "actualites/"
+    folder: "website/content/actualites/"
     create: True
     path: "{{slug}}/index"
     icon: news
@@ -49,27 +50,3 @@ collections:
       - label: Contenu de l'article
         name: body
         widget: markdown
-  - name: "home"
-    label: "Page d'accueil"
-    files:
-      - name: "consortium"
-        label: "Présentation du consortium"
-        file: home/consortium.md
-        fields:
-          - label: "Présentation"
-            name: body
-            widget: markdown
-      - name: "iarbre"
-        label: "Présentation de IA·rbre"
-        file: home/iarbre.md
-        fields:
-          - label: "Présentation"
-            name: body
-            widget: markdown
-      - name: "telescoop"
-        label: "Présentation de telescoop"
-        file: home/telescoop.md
-        fields:
-          - label: "Présentation"
-            name: body
-            widget: markdown

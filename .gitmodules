@@ -1,3 +1,0 @@
-[submodule "website/content"]
-	path = website/content
-	url = git@github.com:TelesCoop/iarbre-showcase-content.git
