@@ -1,0 +1,39 @@
+name: Deploy iarbre.fr website
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+
+jobs:
+  deploy:
+    if: >
+      github.event_name == 'push' ||
+      (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set environment
+        run: |
+          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+            echo "ENVIRONMENT=prod" >> $GITHUB_ENV
+          else
+            echo "ENVIRONMENT=preprod" >> $GITHUB_ENV
+          fi
+
+      - name: Deploy website
+        uses: dawidd6/action-ansible-playbook@v2
+        with:
+          playbook: website.yml
+          directory: deploy
+          vault_password: ${{ secrets.ANSIBLE_VAULT_KEY }}
+          options: |
+            -l ${{ env.ENVIRONMENT }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}

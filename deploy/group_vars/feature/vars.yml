@@ -1,0 +1,12 @@
+branch_slug: "{{ branch | replace('/','-') }}"
+
+environment_suffix: "-feature-{{ branch_slug }}"
+project_slug: "{{ base_project_slug }}{{ environment_suffix }}"
+project_dir: "{{ project_base_dir }}{{ environment_suffix }}"
+
+website_hostname: "feature-{{ branch_slug[:20] }}.iarbre.fr"
+website_redirect_hostnames: []
+hugo_build_flags: "--buildDrafts --buildFuture --buildExpired"
+use_password: true
+
+website_branch: "{{ branch }}"

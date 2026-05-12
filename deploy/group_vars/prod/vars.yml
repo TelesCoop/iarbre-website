@@ -1,0 +1,10 @@
+environment_suffix: ""
+project_slug: "{{ base_project_slug }}{{ environment_suffix }}"
+project_dir: "{{ project_base_dir }}{{ environment_suffix }}"
+
+website_hostname: "iarbre.fr"
+website_redirect_hostnames:
+  - "www.iarbre.fr"
+hugo_build_flags: ""
+
+website_branch: main

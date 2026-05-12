@@ -1,0 +1,28 @@
+---
+- name: Cleanup feature branch website
+  hosts: feature
+  handlers:
+    - import_tasks: telescoop-deploy/handlers/nginx.yml
+  tasks:
+    - name: Remove project directory
+      file:
+        path: "{{ item }}"
+        state: absent
+      loop:
+        - "{{ project_dir }}"
+
+    - name: Remove nginx config for feature branch
+      file:
+        path: "/etc/nginx/sites-enabled/{{ item }}"
+        state: absent
+      loop:
+        - "{{ project_slug }}-website"
+        - "https-{{ website_hostname }}"
+      notify:
+        - Reload nginx
+
+    - name: Delete certbot certificate for feature branch
+      ansible.builtin.command: "certbot delete --cert-name {{ website_hostname }} -n"
+      become: true
+      ignore_errors: true
+      when: website_hostname is match("^feature-.*")

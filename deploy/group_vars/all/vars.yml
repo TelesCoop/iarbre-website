@@ -1,0 +1,19 @@
+organization_slug: telescoop
+base_project_slug: iarbre_website
+main_user: iarbre
+main_user_uid: 10045
+
+use_password: false
+username: "{{ vault_website_username }}"
+password: "{{ vault_website_password }}"
+
+backend_repo: git@github.com:TelesCoop/iarbre-website.git
+backend_identity_file_path: /home/{{ main_user }}/.ssh/id_ed25519_website
+project_base_dir: /{{ organization_slug }}/{{ base_project_slug }}
+var_log_path: /var/log/{{ organization_slug }}/{{ project_slug }}
+
+has_backend: false
+frontend_mode: static
+public_hostnames:
+  - "{{ website_hostname }}"
+all_hostnames: "{{ public_hostnames + website_redirect_hostnames }}"
