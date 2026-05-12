@@ -10,14 +10,11 @@ on:
       - main
     types:
       - closed
-  repository_dispatch:
-    types: [content-updated]
 
 jobs:
   deploy:
     if: >
       github.event_name == 'push' ||
-      github.event_name == 'repository_dispatch' ||
       (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
     runs-on: ubuntu-22.04
     steps:
@@ -39,5 +36,4 @@ jobs:
           vault_password: ${{ secrets.ANSIBLE_VAULT_KEY }}
           options: |
             -l ${{ env.ENVIRONMENT }}
-            ${{ github.event_name == 'repository_dispatch' && '-e force_update=true' || '' }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
