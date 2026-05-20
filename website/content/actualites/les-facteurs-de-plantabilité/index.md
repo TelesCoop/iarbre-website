@@ -4,6 +4,7 @@ draft: false
 publishDate: 2025-11-25T16:33:00
 layout: post
 author: L'équipe IA·rbre
+image: plantability_factors_weights.png
 summary: La méthodologie du calque de plantabilité a été mise au point par [Exo-Dev](https://exo-dev.fr/) et [ERASME](https://erasme.org). Nous revenons ici dessus au travers d'une analyse statistique très simple.
 ---
 

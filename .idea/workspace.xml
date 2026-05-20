@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f233cb6d-487d-4cc8-9699-1c4e0c88c3db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/website/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/content" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/assets/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/website/assets/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/content/actualites/les-facteurs-de-plantabilité/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/website/content/actualites/les-facteurs-de-plantabilité/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/content/actualites/-participation-de-l’équipe-d’iarbre-au-séminaire-annuel-des-masters-géonum/index.md" beforePathEscaped="$PROJECT_DIR$/website/content/actualites/🤖-participation-de-l’équipe-d’iarbre-au-séminaire-annuel-des-masters-géonum/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/website/content/actualites/-participation-de-l’équipe-d’iarbre-au-séminaire-annuel-des-masters-géonum/index.md" afterPathEscaped="$PROJECT_DIR$/website/content/actualites/🤖-participation-de-l’équipe-d’iarbre-au-séminaire-annuel-des-masters-géonum/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/_default/baseof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/layouts/_default/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/_default/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/layouts/_internal/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/_internal/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/layouts/partials/about-section.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/partials/about-section.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/layouts/partials/features-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/partials/features-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/layouts/partials/hero-main.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/partials/hero-main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/layouts/partials/newsletter-section.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/partials/newsletter-section.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/layouts/partials/value-proposition.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/partials/value-proposition.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +30,7 @@
     </persistenceIdMap>
   </component>
   <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="272" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -39,22 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "dev",
+    "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "/Users/grimbsi/Projects/iarbre-website/website/static/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/website/static/images" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,7 +88,8 @@
       <updated>1777751270855</updated>
       <workItem from="1777751278510" duration="103000" />
       <workItem from="1777751678026" duration="3389000" />
-      <workItem from="1778575082450" duration="1788000" />
+      <workItem from="1778575082450" duration="14023000" />
+      <workItem from="1779265981192" duration="13957000" />
     </task>
     <servers />
   </component>

@@ -1,17 +1,58 @@
 <header class="navbar">
   <div class="navbar-container">
-    <div class="navbar-left">
-      <a href="/">
-        <img src="/images/logo-iarbre.png" alt="Logo" class="navbar-logo" />
-      </a>
-    </div>
-    <div class="navbar-right">
-      <a href="https://carte.iarbre.fr" class="navbar-link">La carte</a>
+    <a href="/" class="navbar-brand" aria-label="Accueil IA·rbre">
+      <img src="/images/logo-iarbre.png" alt="IA·rbre" class="navbar-logo" />
+    </a>
+
+    <nav class="navbar-nav" aria-label="Navigation principale">
+      <a href="https://carte.iarbre.fr" class="navbar-link" target="_blank" rel="noopener noreferrer">La carte</a>
       <a href="/actualites" class="navbar-link">Actualités</a>
       <a href="/#newsletter" class="navbar-link">Newsletter</a>
-      <a href="mailto:contact@telescoop.fr" class="navbar-link"
-        >Nous Contacter</a
-      >
+    </nav>
+
+    <div class="navbar-actions">
+      <a href="mailto:contact@telescoop.fr" class="btn btn-primary navbar-cta">
+        Nous contacter
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M5 12h14M13 5l7 7-7 7"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
     </div>
+
+    <button
+      class="navbar-burger"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+      aria-controls="navbar-drawer"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="navbar-drawer" id="navbar-drawer" hidden>
+    <nav class="navbar-drawer-nav" aria-label="Navigation mobile">
+      <a href="https://carte.iarbre.fr" class="navbar-drawer-link" target="_blank" rel="noopener noreferrer">La carte</a>
+      <a href="/actualites" class="navbar-drawer-link">Actualités</a>
+      <a href="/#newsletter" class="navbar-drawer-link">Newsletter</a>
+      <a href="mailto:contact@telescoop.fr" class="btn btn-primary navbar-drawer-cta">
+        Nous contacter
+      </a>
+    </nav>
   </div>
 </header>

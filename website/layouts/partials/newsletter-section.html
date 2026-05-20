@@ -1,26 +1,37 @@
 <section class="newsletter-section" id="newsletter">
-  <div class="container">
-    <div class="newsletter-signup">
-      <h2>Restez informé</h2>
-      <p>Recevez les dernières actualités du projet IA·rbre</p>
+  <div class="newsletter-container">
+    <div class="newsletter-card">
+      <span class="newsletter-eyebrow">Newsletter</span>
+      <h2 class="newsletter-title">Suivez les avancées du projet&nbsp;IA·rbre.</h2>
+      <p class="newsletter-text">
+        Un email par mois&nbsp;: actualités, articles techniques et retours
+        terrain. Pas de spam, désabonnement en un clic.
+      </p>
       <form
         action="{{ .Site.Params.newsletter.formUrl }}"
         class="newsletter-form"
         method="post"
       >
-        <input
-          name="contact[email]"
-          placeholder="Votre adresse email"
-          required
-          type="email"
-        />
-        <input
-          name="captcha"
-          type="hidden"
-          value="{{ .Site.Params.newsletter.captchaKey }}"
-        />
-        <button class="btn btn-secondary" type="submit">S'abonner</button>
+        <div class="newsletter-input-wrap">
+          <input
+            name="contact[email]"
+            placeholder="vous@exemple.fr"
+            required
+            type="email"
+            class="newsletter-input"
+          />
+          <input
+            name="captcha"
+            type="hidden"
+            value="{{ .Site.Params.newsletter.captchaKey }}"
+          />
+          <button class="newsletter-submit" type="submit">S'abonner</button>
+        </div>
       </form>
+      <p class="newsletter-fineprint">
+        Nous respectons votre vie privée — aucune donnée n'est partagée à des
+        tiers.
+      </p>
     </div>
   </div>
 </section>

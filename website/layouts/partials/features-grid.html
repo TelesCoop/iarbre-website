@@ -1,236 +1,337 @@
-<section class="features-grid" id="features">
-  <div class="container">
-    <h2 class="section-title">La plateforme et la création de données</h2>
-    <p class="section-subtitle">
-      De la création de données à la carte pédagogique et interactive jusqu'aux
-      exports SIG : tout ce qu'il faut pour passer de la donnée à la décision.
-    </p>
-
-    <div class="features-container">
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 4L4 8l8 4 8-4-8-4z"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M4 12l8 4 8-4"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linejoin="round"
-              opacity="0.6"
-            />
-            <path
-              d="M4 16l8 4 8-4"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linejoin="round"
-            />
-          </svg>
+<section class="platform-block" id="features">
+  <div class="platform-container">
+    <div class="platform-inner">
+      <div class="platform-intro">
+        <h2 class="platform-title">
+          La plateforme et la création de données.
+        </h2>
+        <div class="platform-cols">
+          <div class="platform-col">
+            <div class="platform-col-text">
+              <p class="platform-col-title">Plateforme web</p>
+              <p class="platform-col-desc">
+                Une carte pédagogique et interactive accessible depuis le
+                navigateur, sans installation ni compétence SIG. Couches
+                vectorielles documentées, croisements multicritères et exports
+                vers QGIS via WFS.
+              </p>
+            </div>
+            <a
+              href="https://carte.iarbre.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="platform-col-cta platform-col-cta--primary"
+            >
+              Ouvrir la carte
+            </a>
+          </div>
+          <div class="platform-col">
+            <div class="platform-col-text">
+              <p class="platform-col-title">Création de données</p>
+              <p class="platform-col-desc">
+                Jeux de données reproductibles et à haute valeur ajoutée,
+                produits avec le laboratoire CNRS du LIRIS. Méthodologies
+                ouvertes, scripts versionnés, suivi diachronique à l'échelle
+                d'un mandat.
+              </p>
+            </div>
+            <a
+              href="https://erasme.notion.site/Documentation-IA-rbre-33444e49a3ad80af8d9ef01b578e1192"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="platform-col-cta platform-col-cta--outline"
+            >
+              Documentation
+            </a>
+          </div>
         </div>
-        <h3 class="feature-title">Calques de données</h3>
-        <p class="feature-description">
-          4 calques analytiques : inventaire stratifié du végétal, plantabilité,
-          vulnérabilité à la chaleur et zones climatiques locales.
-        </p>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7z"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+      <div class="platform-cards">
+        <article class="platform-card">
+          <div class="platform-card-header">
+            <h3 class="platform-card-title">
+              Quatre calques analytiques prêts à l'emploi
+            </h3>
+            <p class="platform-card-text">
+              Inventaire stratifié du végétal, plantabilité, vulnérabilité à la
+              chaleur et zones climatiques locales. Chaque calque est
+              documenté, sourcé et exportable.
+            </p>
+          </div>
+          <div class="platform-card-image-wrap">
+            <img
+              src="/images/illustration-calques.svg"
+              alt="Illustration de calques de données empilés"
+              class="platform-card-image"
+              loading="lazy"
             />
-            <circle
-              cx="17.5"
-              cy="17.5"
-              r="3.5"
-              stroke="currentColor"
-              stroke-width="2"
+          </div>
+        </article>
+
+        <article class="platform-card platform-card--neutral">
+          <div class="platform-card-header">
+            <h3 class="platform-card-title">
+              Croisements multicritères et exports SIG
+            </h3>
+            <p class="platform-card-text">
+              Combinez plusieurs calques pour prioriser par impact. Récupérez
+              les résultats en WFS et alimentez vos analyses internes ou vos
+              rapports aux élus.
+            </p>
+          </div>
+          <div class="platform-card-image-wrap">
+            <img
+              src="/images/illustration-croisements.svg"
+              alt="Illustration de croisements de données"
+              class="platform-card-image"
+              loading="lazy"
             />
-          </svg>
-        </div>
-        <h3 class="feature-title">Croisement de données</h3>
-        <p class="feature-description">
-          Une vision multi-critères pour prioriser par impact et maximiser les
-          services écosystémiques.
-        </p>
+          </div>
+        </article>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="2"
-              y="2"
-              width="6"
-              height="20"
-              rx="1"
-              stroke="currentColor"
-              stroke-width="2"
-            />
-            <rect
-              x="9"
-              y="2"
-              width="13"
-              height="20"
-              rx="1"
-              stroke="currentColor"
-              stroke-width="1.5"
-              opacity="0.3"
-            />
-          </svg>
+      <div class="platform-features-card">
+        <div class="platform-features-header">
+          <h3 class="platform-features-title">
+            Tout ce qu'il faut pour passer de la donnée à la décision
+          </h3>
+          <p class="platform-features-subtitle">
+            Une plateforme et un bouquet de données pensés pour les chargés de
+            mission territoriaux.
+          </p>
         </div>
-        <h3 class="feature-title">Données contextualisées</h3>
-        <p class="feature-description">
-          Avec la plateforme explorez les facteurs explicatifs, le contexte et
-          la méthodologie de chaque indice.
-        </p>
-      </div>
+        <div class="platform-features-grid">
+          <div class="platform-feature">
+            <div class="platform-feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="6"
+                  height="20"
+                  rx="1"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <rect
+                  x="9"
+                  y="2"
+                  width="13"
+                  height="20"
+                  rx="1"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  opacity="0.4"
+                />
+              </svg>
+            </div>
+            <div class="platform-feature-text">
+              <p class="platform-feature-title">Données contextualisées</p>
+              <p class="platform-feature-desc">
+                Facteurs explicatifs, contexte et méthodologie accessibles
+                directement à côté de chaque indice.
+              </p>
+            </div>
+          </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="12"
-              cy="12"
-              r="3"
-              stroke="currentColor"
-              stroke-width="2"
-            />
-            <path
-              d="M12 2v3M12 19v3M22 12h-3M5 12H2"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M17 7l-2 2M9 15l-2 2M17 17l-2-2M9 9L7 7"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <circle cx="12" cy="12" r="1.5" fill="currentColor" />
-          </svg>
-        </div>
-        <h3 class="feature-title">IA</h3>
-        <p class="feature-description">
-          Production de données optimisée avec des algorithmes d'intelligence
-          artificielle économes en ressources. Nous mobilisions l'IA quand elle
-          est utile et non par principe.
-        </p>
-      </div>
+          <div class="platform-feature">
+            <div class="platform-feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 2v3M12 19v3M22 12h-3M5 12H2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M17 7l-2 2M9 15l-2 2M17 17l-2-2M9 9L7 7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="platform-feature-text">
+              <p class="platform-feature-title">IA frugale</p>
+              <p class="platform-feature-desc">
+                Algorithmes d'IA économes en ressources, mobilisés uniquement
+                quand ils apportent une vraie valeur.
+              </p>
+            </div>
+          </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="12"
-              cy="12"
-              r="9"
-              stroke="currentColor"
-              stroke-width="2"
-            />
-            <path
-              d="M12 3c2.5 0 4.5 4 4.5 9s-2 9-4.5 9"
-              stroke="currentColor"
-              stroke-width="2"
-            />
-            <path
-              d="M12 3c-2.5 0-4.5 4-4.5 9s2 9 4.5 9"
-              stroke="currentColor"
-              stroke-width="2"
-            />
-            <path
-              d="M3 12h18M5 7h14M5 17h14"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-        </div>
-        <h3 class="feature-title">Facilité d'utilisation</h3>
-        <p class="feature-description">
-          Aucune installation. La plateforme s'ouvre dans un navigateur et
-          expose un flux WFS compatible avec QGIS, ARcGIS et tout autre SIG.
-        </p>
-      </div>
+          <div class="platform-feature">
+            <div class="platform-feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 3c2.5 0 4.5 4 4.5 9s-2 9-4.5 9M12 3c-2.5 0-4.5 4-4.5 9s2 9 4.5 9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M3 12h18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="platform-feature-text">
+              <p class="platform-feature-title">Facilité d'utilisation</p>
+              <p class="platform-feature-desc">
+                Aucune installation. Flux WFS compatible QGIS, ArcGIS et la
+                plupart des SIG.
+              </p>
+            </div>
+          </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="2"
-              y="2"
-              width="20"
-              height="20"
-              rx="2"
-              stroke="currentColor"
-              stroke-width="2"
-            />
-            <path
-              d="M8 2v20M16 2v20M2 8h20M2 16h20"
-              stroke="currentColor"
-              stroke-width="1.5"
-              opacity="0.3"
-            />
-            <circle cx="12" cy="10" r="2.5" fill="currentColor" />
-            <path
-              d="M7 15h4M13 18h6"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
+          <div class="platform-feature">
+            <div class="platform-feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M8 2v20M16 2v20M2 8h20M2 16h20"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  opacity="0.3"
+                />
+                <circle cx="12" cy="10" r="2" fill="currentColor" />
+                <path
+                  d="M7 15h4M13 18h6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="platform-feature-text">
+              <p class="platform-feature-title">Tableau de bord du territoire</p>
+              <p class="platform-feature-desc">
+                Indicateurs synthétiques par zone pour vos rapports et
+                présentations aux élus.
+              </p>
+            </div>
+          </div>
+
+          <div class="platform-feature">
+            <div class="platform-feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2L2 7v6c0 5 4 9 10 9s10-4 10-9V7l-10-5z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 12l2 2 4-4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="platform-feature-text">
+              <p class="platform-feature-title">Reproductibilité</p>
+              <p class="platform-feature-desc">
+                Scripts versionnés et méthodologies documentées : vos analyses
+                sont rejouables sur la durée d'un mandat.
+              </p>
+            </div>
+          </div>
+
+          <div class="platform-feature">
+            <div class="platform-feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M16 18l6-6-6-6M8 6l-6 6 6 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 4l-4 16"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="platform-feature-text">
+              <p class="platform-feature-title">Open-source &amp; souveraineté</p>
+              <p class="platform-feature-desc">
+                Code et données ouverts, aucun lock-in. Vos équipes gardent la
+                maîtrise dans le temps.
+              </p>
+            </div>
+          </div>
         </div>
-        <h3 class="feature-title">Tableau de bord du territoire</h3>
-        <p class="feature-description">
-          Pour vos rapports et présentations aux élus, un condensé d'indicateurs
-          sur une zone.
-        </p>
       </div>
     </div>
   </div>

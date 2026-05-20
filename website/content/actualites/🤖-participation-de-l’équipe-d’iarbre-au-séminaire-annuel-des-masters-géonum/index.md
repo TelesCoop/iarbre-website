@@ -4,6 +4,7 @@ draft: false
 publishDate: 2026-02-19T09:00:00
 layout: post
 author: L'équipe TelesCoop
+image: team.jpg
 summary: Le jeudi 12 février 2026 avait lieu une table ronde organisée par les élèves des masters Géonum et Sentinelles (Université Lyon 2, Université Lyon 3) et piloté par Natacha Belaud.
 ---
 
