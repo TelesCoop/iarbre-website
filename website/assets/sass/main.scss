@@ -393,8 +393,10 @@ h6 {
     border: 0;
     cursor: pointer;
     padding: 0;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5px;
     border-radius: $radius-md;
     transition: background $transition-fast;
 
@@ -408,16 +410,11 @@ h6 {
 
     span {
       display: block;
-      position: relative;
       width: 22px;
       height: 2px;
       background: $primary;
       border-radius: 2px;
       transition: transform $transition-fast, opacity $transition-fast;
-    }
-
-    span + span {
-      margin-top: 5px;
     }
 
     &[aria-expanded="true"] {
