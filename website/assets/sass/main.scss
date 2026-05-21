@@ -508,6 +508,12 @@ body.drawer-open {
       @media (max-width: $mobile) {
         font-size: $font-lg;
       }
+
+      b,
+      strong {
+        color: $rust-700;
+        font-weight: 700;
+      }
     }
 
     .hero-actions {
@@ -1015,6 +1021,12 @@ body.drawer-open {
     line-height: 1;
     letter-spacing: -0.02em;
     color: $primary;
+
+    sup {
+      color: $rust-500;
+      font-size: 0.55em;
+      margin-left: 0.1em;
+    }
   }
 
   .about-stat-label {
@@ -1597,7 +1609,7 @@ body.drawer-open {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: $primary;
+  color: $rust-500;
 }
 
 .newsletter-title {
