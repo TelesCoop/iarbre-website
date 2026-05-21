@@ -16,6 +16,18 @@ $primary-900: #002814;
 
 $primary: $primary-500;
 $primaryLight: $primary-300;
+
+// Yellow scale (muted ochre / wheat — same desaturation as primary)
+$yellow-50: #f6f1dc;
+$yellow-100: #e8dcb0;
+$yellow-200: #d6c489;
+$yellow-300: #b8a062;
+$yellow-500: #a89254;
+$yellow-700: #6f5e2c;
+$yellow-900: #3f361a;
+
+$yellow: $yellow-500;
+
 $accent: #92a48d;
 $off-white: #efefed;
 $brown: #32312d;
@@ -43,15 +55,12 @@ $mobile: 768px;
 $tablet: 1024px;
 $desktop: 1280px;
 $desktop-large: 1536px;
-$desktop-xlarge: 1920px;
 
 // Border radius
-$radius-xs: 2px;
 $radius-sm: 4px;
 $radius-md: 8px;
 $radius-lg: 12px;
 $radius-xl: 12px;
-$radius-xxl: 12px;
 $radius-round: 50%;
 
 // Border widths
@@ -60,11 +69,6 @@ $border-medium: 2px;
 $border-thick: 4px;
 
 // Border colors
-$border-light: $gray-200;
-$border-medium-color: $gray-200;
-$border-strong: darken($gray-200, 10%);
-$border-white: rgba($white, 0.3);
-$border-green: rgba($accent, 0.5);
 $border-solid: $primary;
 $border-accent: $accent;
 
@@ -88,37 +92,23 @@ $button-size-md: 50px;
 
 $icon-size-sm: 20px;
 $icon-size-md: 24px;
-$icon-size-lg: 32px;
 
-$logo-height-sm: 35px;
-$logo-height-md: 40px;
-$logo-height-lg: 50px;
 $logo-height-xl: 60px;
 
 $card-width-sm: 280px;
 $card-width-md: 360px;
-$card-width-lg: 400px;
 
-$logo-width-sm: 120px;
-
-$line-width-sm: 80px;
-
+// Image heights
 $image-height-sm: 200px;
-$image-height-md: 240px;
 $image-height-lg: 280px;
-$image-height-xl: 300px;
 $image-height-xxl: 400px;
-$image-height-xxxl: 500px;
 
 // Container max-widths
-$content-width-sm: 640px;
 $content-width-md: 768px;
 $content-width-lg: 1024px;
 $content-width-xl: 1280px;
 $content-width-2xl: 1536px;
 $content-width-prose: 50vw;
-$content-width-prose-lg: 75vw;
-$content-width-prose-xl: 50vw;
 
 // Transitions
 $transition-fast: 0.2s ease;
@@ -233,18 +223,6 @@ h6 {
 // UTILITIES
 // =============================================================================
 
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
 .container {
   width: 100%;
   margin-inline: auto;
@@ -266,36 +244,6 @@ h6 {
   @media (min-width: $desktop-large) {
     max-width: $content-width-2xl;
     padding-inline: $spacing-xxl;
-  }
-}
-
-.container-wide {
-  width: 100%;
-  margin-inline: auto;
-  padding-inline: $spacing-lg;
-
-  @media (min-width: $tablet) {
-    padding-inline: $spacing-xl;
-  }
-
-  @media (min-width: $desktop) {
-    max-width: calc(100% - 8rem);
-  }
-
-  @media (min-width: $desktop-large) {
-    max-width: $content-width-2xl;
-    padding-inline: $spacing-xxl;
-  }
-}
-
-.container-prose {
-  width: 100%;
-  max-width: $content-width-prose;
-  margin-inline: auto;
-  padding-inline: $spacing-lg;
-
-  @media (min-width: $tablet) {
-    padding-inline: $spacing-xl;
   }
 }
 
@@ -3108,47 +3056,6 @@ body.drawer-open {
       }
     }
   }
-}
-
-// =============================================================================
-// ANIMATIONS & EFFECTS
-// =============================================================================
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.loading {
-  animation: pulse 2s infinite;
-}
-
-.fade-in {
-  animation: fadeIn 0.8s ease-out;
-}
-
-.slide-in {
-  animation: slideInUp 0.6s ease-out;
-}
-
-.funding-cta {
-  text-align: center;
-  padding-bottom: $spacing-lg;
 }
 
 // =============================================================================
