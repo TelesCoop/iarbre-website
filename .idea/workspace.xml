@@ -6,18 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f233cb6d-487d-4cc8-9699-1c4e0c88c3db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/assets/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/website/assets/sass/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/content/actualites/les-facteurs-de-plantabilité/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/website/content/actualites/les-facteurs-de-plantabilité/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/content/actualites/-participation-de-l’équipe-d’iarbre-au-séminaire-annuel-des-masters-géonum/index.md" beforePathEscaped="$PROJECT_DIR$/website/content/actualites/🤖-participation-de-l’équipe-d’iarbre-au-séminaire-annuel-des-masters-géonum/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/website/content/actualites/-participation-de-l’équipe-d’iarbre-au-séminaire-annuel-des-masters-géonum/index.md" afterPathEscaped="$PROJECT_DIR$/website/content/actualites/🤖-participation-de-l’équipe-d’iarbre-au-séminaire-annuel-des-masters-géonum/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/_default/baseof.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/layouts/_default/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/_default/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/layouts/_internal/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/_internal/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/layouts/partials/about-section.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/partials/about-section.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/layouts/partials/features-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/partials/features-grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/layouts/partials/hero-main.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/partials/hero-main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/layouts/partials/newsletter-section.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/partials/newsletter-section.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/layouts/partials/value-proposition.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/layouts/partials/value-proposition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/images/illustration-territoire.svg" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/images/illustration-territoire.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +47,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "website-v3",
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "/Users/grimbsi/Projects/iarbre-website/website/static/images",
     "node.js.detected.package.eslint": "true",

@@ -491,15 +491,15 @@ body.drawer-open {
 .hero-main {
   position: relative;
   background: $white;
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 0;
   overflow: hidden;
 
   @media (min-width: 640px) {
-    padding: 2.5rem 0 5rem;
+    padding: 2.5rem 0 0;
   }
 
   @media (min-width: $tablet) {
-    padding: 3rem 0 7rem;
+    padding: 3rem 0 0;
   }
 
   .hero-content {
