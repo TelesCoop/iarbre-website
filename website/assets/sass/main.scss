@@ -17,7 +17,7 @@ $primary-900: #002814;
 $primary: $primary-500;
 $primaryLight: $primary-300;
 
-// Yellow scale (muted ochre / wheat — same desaturation as primary)
+// Yellow scale (muted ochre / wheat, same desaturation as primary)
 $yellow-50: #f6f1dc;
 $yellow-100: #e8dcb0;
 $yellow-200: #d6c489;
@@ -783,7 +783,7 @@ body.drawer-open {
     }
 
     &--accent {
-      background: $brown;
+      background: $yellow-700;
       color: $white;
 
       @media (min-width: $desktop) {
