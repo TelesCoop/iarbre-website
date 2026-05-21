@@ -664,6 +664,7 @@ body.drawer-open {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    margin-top: $spacing-lg;
     padding: 0.65rem 1.3rem;
     border-radius: 999px;
     background: $primary;
@@ -916,6 +917,10 @@ body.drawer-open {
     max-width: $content-width-xl;
     margin-inline: auto;
     padding-inline: $spacing-lg;
+
+    @media (min-width: $desktop-large) {
+      max-width: $content-width-2xl;
+    }
   }
 
   .platform-inner {
