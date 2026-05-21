@@ -17,11 +17,11 @@ $primary-900: #002814;
 $primary: $primary-500;
 $primaryLight: $primary-300;
 
-// Yellow scale (muted ochre / wheat, same desaturation as primary)
-$yellow-50: #f6f1dc;
-$yellow-100: #e8dcb0;
-$yellow-200: #d6c489;
-$yellow-300: #b8a062;
+// Yellow scale (calibrated on the same lightness range as $primary-50 #edf5e9)
+$yellow-50: #f5f2de;
+$yellow-100: #ede5c2;
+$yellow-200: #ddd09b;
+$yellow-300: #c4b574;
 $yellow-500: #a89254;
 $yellow-700: #6f5e2c;
 $yellow-900: #3f361a;
@@ -783,8 +783,8 @@ body.drawer-open {
     }
 
     &--accent {
-      background: $yellow-700;
-      color: $white;
+      background: $yellow-50;
+      color: $primary-900;
 
       @media (min-width: $desktop) {
         grid-column: 2 / 3;
