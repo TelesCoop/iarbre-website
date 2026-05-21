@@ -186,7 +186,6 @@ a {
 
 .btn:focus-visible,
 .navbar-cta:focus-visible,
-.platform-col-cta:focus-visible,
 .vpb-cta:focus-visible,
 .newsletter-submit:focus-visible,
 .consortium-item:focus-visible {
@@ -734,18 +733,6 @@ body.drawer-open {
       }
     }
 
-    .vpb-card-eyebrow {
-      font-size: $font-xs;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: $primary;
-
-      &--on-dark {
-        color: rgba($white, 0.7);
-      }
-    }
-
     .vpb-card-title {
       font-family: $main-font, Arial, sans-serif;
       font-size: $font-2xl;
@@ -899,289 +886,36 @@ body.drawer-open {
       }
     }
   }
-}
 
-// =============================================================================
-// FEATURES GRID SECTION
-// =============================================================================
-
-.platform-block {
-  background: $white;
-  padding-block: 4rem;
-
-  @media (min-width: 640px) {
-    padding-block: 5rem;
-  }
-
-  .platform-container {
-    max-width: $content-width-xl;
-    margin-inline: auto;
-    padding-inline: $spacing-lg;
-
-    @media (min-width: $desktop-large) {
-      max-width: $content-width-2xl;
-    }
-  }
-
-  .platform-inner {
-    max-width: $content-width-2xl;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  .platform-intro {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    padding-bottom: $spacing-sm;
-  }
-
-  .platform-title {
-    font-family: $main-font, Arial, sans-serif;
-    font-size: clamp(2.25rem, calc(2.5vw + 1.5rem), 4rem);
-    font-weight: 800;
-    line-height: 1.05;
-    letter-spacing: -0.025em;
-    color: $primary;
-    max-width: 720px;
-    margin: 0;
-  }
-
-  .platform-cols {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-xl;
-
-    @media (min-width: $tablet) {
-      flex-direction: row;
-      gap: $spacing-xxl;
-    }
-  }
-
-  .platform-col {
-    flex: 1;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-lg;
-  }
-
-  .platform-col-text {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-sm;
-  }
-
-  .platform-col-title {
-    font-size: $font-2xl;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.015em;
-    color: $primary;
-    margin: 0;
-
-    @media (min-width: $mobile) {
-      font-size: $font-3xl;
-    }
-  }
-
-  .platform-col-desc {
-    font-size: $font-base;
-    line-height: 1.6;
-    color: $gray;
-    margin: 0;
-
-    @media (min-width: $mobile) {
-      font-size: $font-lg;
-    }
-  }
-
-  .platform-col-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    height: 48px;
-    padding-inline: 1.3rem;
-    border-radius: 999px;
-    font-size: $font-base;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background $transition-fast, border-color $transition-fast,
-      color $transition-fast;
-    align-self: flex-start;
-    border: $border-thin solid transparent;
-
-    &--primary {
-      background: $primary;
-      color: $white;
-      border-color: $primary;
-
-      &:hover {
-        background: $primary-900;
-        border-color: $primary-900;
-        color: $white;
-        text-decoration: none;
-      }
-    }
-
-    &--outline {
-      background: $white;
-      color: $primary;
-      border-color: $primary;
-
-      &:hover {
-        background: $primary-50;
-        border-color: $primary;
-        color: $primary;
-        text-decoration: none;
-      }
-    }
-  }
-
-  .platform-cards {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-md;
-
-    @media (min-width: $tablet) {
-      flex-direction: row;
-      gap: $spacing-md;
-    }
-  }
-
-  .platform-card {
-    flex: 1;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: $radius-xl;
-    background: $primary-50;
-
-    &--neutral {
-      background: $off-white;
-    }
-
-    .platform-card-header {
-      display: flex;
-      flex-direction: column;
-      gap: $spacing-sm;
-      padding: $spacing-lg;
-      flex-shrink: 0;
-
-      @media (min-width: $mobile) {
-        padding: $spacing-xl;
-      }
-    }
-
-    .platform-card-title {
-      font-family: $main-font, Arial, sans-serif;
-      font-size: $font-xl;
-      font-weight: 800;
-      line-height: 1.2;
-      letter-spacing: -0.015em;
-      color: $primary;
-      margin: 0;
-
-      @media (min-width: $mobile) {
-        font-size: $font-2xl;
-      }
-    }
-
-    .platform-card-text {
-      font-size: $font-base;
-      line-height: 1.55;
-      color: $gray;
-      margin: 0;
-
-      @media (min-width: $mobile) {
-        font-size: $font-lg;
-      }
-    }
-
-    .platform-card-image-wrap {
-      margin-top: auto;
-      padding-left: $spacing-lg;
-
-      @media (min-width: $mobile) {
-        padding-left: $spacing-xl;
-      }
-    }
-
-    .platform-card-image {
-      display: block;
-      aspect-ratio: 16 / 9;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-top-left-radius: $radius-lg;
-    }
-  }
-
-  .platform-features-card {
+  .vpb-features-card {
     border-radius: $radius-xl;
     background: $primary-50;
     padding: $spacing-lg;
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-xxl;
+    margin-top: $spacing-sm;
 
-    @media (min-width: $mobile) {
-      padding: $spacing-xxl;
+    @media (min-width: $tablet) {
+      padding: $spacing-xl;
     }
   }
 
-  .platform-features-header {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-sm;
-  }
-
-  .platform-features-title {
-    font-family: $main-font, Arial, sans-serif;
-    font-size: $font-xl;
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: -0.015em;
-    color: $primary;
-    margin: 0;
-
-    @media (min-width: $mobile) {
-      font-size: $font-3xl;
-    }
-  }
-
-  .platform-features-subtitle {
-    font-size: $font-base;
-    line-height: 1.55;
-    color: $gray;
-    margin: 0;
-
-    @media (min-width: $mobile) {
-      font-size: $font-lg;
-    }
-  }
-
-  .platform-features-grid {
+  .vpb-features-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: $spacing-xl;
+    gap: $spacing-md;
 
     @media (min-width: $tablet) {
       grid-template-columns: repeat(3, 1fr);
+      gap: $spacing-xl;
     }
   }
 
-  .platform-feature {
+  .vpb-feature {
     display: flex;
     gap: $spacing-md;
     align-items: flex-start;
   }
 
-  .platform-feature-icon {
+  .vpb-feature-icon {
     flex-shrink: 0;
     display: inline-flex;
     align-items: center;
@@ -1199,15 +933,15 @@ body.drawer-open {
     }
   }
 
-  .platform-feature-text {
+  .vpb-feature-text {
     flex: 1;
     min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: $spacing-xs/2;
+    gap: $spacing-xs / 2;
   }
 
-  .platform-feature-title {
+  .vpb-feature-title {
     color: $primary;
     font-weight: 600;
     font-size: $font-lg;
@@ -1215,7 +949,7 @@ body.drawer-open {
     line-height: 1.4;
   }
 
-  .platform-feature-desc {
+  .vpb-feature-desc {
     color: $gray;
     font-size: $font-base;
     line-height: 1.5;
@@ -1266,15 +1000,7 @@ body.drawer-open {
     flex-direction: column;
     gap: $spacing-md;
   }
-
-  .about-eyebrow {
-    font-size: $font-xs;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: $primary;
-  }
-
+  
   .about-title {
     font-family: $main-font, Arial, sans-serif;
     font-size: clamp(2rem, calc(2vw + 1.4rem), 3rem);
@@ -1390,6 +1116,29 @@ body.drawer-open {
     margin: 0;
     text-align: left;
     max-width: 720px;
+  }
+
+  .consortium-team-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: $primary;
+    font-weight: 600;
+    font-size: $font-base;
+    text-decoration: none;
+    align-self: flex-start;
+
+    svg {
+      transition: transform $transition-medium;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      svg {
+        transform: translateX(4px);
+      }
+    }
   }
 
   .consortium-group {
