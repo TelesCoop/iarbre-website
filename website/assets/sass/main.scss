@@ -28,16 +28,6 @@ $gold-900: #423410;
 
 $gold: $gold-300;
 
-// Rust scale (warm terracotta, anchored on #B36137)
-$rust-50: #f6e3d4;
-$rust-100: #e8c1a0;
-$rust-200: #d49a6b;
-$rust-300: #c07e4d;
-$rust-500: #b36137;
-$rust-700: #7a4225;
-$rust-900: #422412;
-
-$rust: $rust-500;
 
 $accent: #92a48d;
 $off-white: #efefed;
@@ -508,12 +498,6 @@ body.drawer-open {
       @media (max-width: $mobile) {
         font-size: $font-lg;
       }
-
-      b,
-      strong {
-        color: $rust-700;
-        font-weight: 700;
-      }
     }
 
     .hero-actions {
@@ -540,19 +524,10 @@ body.drawer-open {
       display: block;
       border-radius: $radius-xl;
       overflow: hidden;
-      box-shadow:
-        0 1px 2px rgba(16, 24, 40, 0.04),
-        0 12px 32px rgba(16, 24, 40, 0.08),
-        0 32px 64px rgba(16, 24, 40, 0.06);
       border: $border-thin solid $gray-200;
-      transition: transform $transition-medium, box-shadow $transition-medium;
 
       &:hover {
         transform: translateY(-2px);
-        box-shadow:
-          0 1px 2px rgba(16, 24, 40, 0.05),
-          0 16px 40px rgba(16, 24, 40, 0.1),
-          0 40px 80px rgba(16, 24, 40, 0.08);
       }
     }
 
@@ -1021,12 +996,6 @@ body.drawer-open {
     line-height: 1;
     letter-spacing: -0.02em;
     color: $primary;
-
-    sup {
-      color: $rust-500;
-      font-size: 0.55em;
-      margin-left: 0.1em;
-    }
   }
 
   .about-stat-label {
@@ -1123,10 +1092,10 @@ body.drawer-open {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: $rust-700;
+    color: $primary;
     margin: 0;
     padding-bottom: $spacing-sm;
-    border-bottom: $border-thin solid $rust-100;
+    border-bottom: $border-thin solid $primary-100;
   }
 
   .consortium-grid {
@@ -1609,7 +1578,7 @@ body.drawer-open {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: $rust-500;
+  color: $primary;
 }
 
 .newsletter-title {
