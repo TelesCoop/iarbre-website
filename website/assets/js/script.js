@@ -65,11 +65,9 @@
   }
 
   banner.removeAttribute("hidden");
-  requestAnimationFrame(() => banner.classList.add("is-visible"));
 
   closeBtn.addEventListener("click", () => {
-    banner.classList.remove("is-visible");
-    setTimeout(() => banner.setAttribute("hidden", ""), 200);
+    banner.setAttribute("hidden", "");
     try {
       localStorage.setItem(STORAGE_KEY, "1");
     } catch (e) {
