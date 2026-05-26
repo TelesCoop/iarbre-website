@@ -5,6 +5,5 @@ project_dir: "{{ project_base_dir }}{{ environment_suffix }}"
 website_hostname: "preprod.iarbre.fr"
 website_redirect_hostnames: []
 hugo_build_flags: "--buildDrafts --buildFuture --buildExpired"
-use_password: true
 
 website_branch: dev

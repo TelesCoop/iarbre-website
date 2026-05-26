@@ -16,7 +16,7 @@ jobs:
     if: >
       github.event_name == 'push' ||
       (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
@@ -33,7 +33,6 @@ jobs:
         with:
           playbook: website.yml
           directory: deploy
-          vault_password: ${{ secrets.ANSIBLE_VAULT_KEY }}
           options: |
             -l ${{ env.ENVIRONMENT }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
