@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="450"/>
+
+  <defs>
+    <clipPath id="setA">
+      <circle cx="335" cy="225" r="155"/>
+    </clipPath>
+    <clipPath id="setB">
+      <circle cx="475" cy="225" r="155"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#setA)">
+    <circle cx="335" cy="225" r="155" fill="#97b090" opacity="0.55"/>
+    <g fill="#002814" opacity="0.65">
+      <circle cx="240" cy="170" r="4"/>
+      <circle cx="280" cy="200" r="4"/>
+      <circle cx="240" cy="230" r="4"/>
+      <circle cx="280" cy="260" r="4"/>
+      <circle cx="240" cy="290" r="4"/>
+      <circle cx="200" cy="200" r="3"/>
+      <circle cx="200" cy="260" r="3"/>
+      <circle cx="320" cy="170" r="3"/>
+      <circle cx="320" cy="230" r="3"/>
+      <circle cx="320" cy="290" r="3"/>
+    </g>
+  </g>
+
+  <g clip-path="url(#setB)">
+    <circle cx="475" cy="225" r="155" fill="#34522a" opacity="0.55"/>
+    <g stroke="#edf5e9" stroke-width="1.6" fill="none" opacity="0.85">
+      <path d="M420 175 L520 175"/>
+      <path d="M420 205 L560 205"/>
+      <path d="M420 235 L560 235"/>
+      <path d="M420 265 L560 265"/>
+      <path d="M420 295 L520 295"/>
+      <path d="M480 165 L480 305"/>
+      <path d="M510 165 L510 305"/>
+      <path d="M540 175 L540 295"/>
+    </g>
+  </g>
+
+  <g>
+    <circle cx="405" cy="225" r="38" fill="#002814" opacity="0.92"/>
+    <path d="M405 207 L405 243 M387 225 L423 225" stroke="#edf5e9" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g stroke="#34522a" stroke-width="1" opacity="0.32" stroke-dasharray="2 5" fill="none">
+    <path d="M180 90 Q280 130 335 175"/>
+    <path d="M620 90 Q520 130 475 175"/>
+    <path d="M405 380 L405 290"/>
+  </g>
+
+  <g fill="#34522a">
+    <circle cx="180" cy="90" r="4"/>
+    <circle cx="620" cy="90" r="4"/>
+    <circle cx="405" cy="395" r="4"/>
+  </g>
+</svg>

@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" fill="none" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="900" fill="#edf5e9"/>
+
+  <g transform="translate(70 60)">
+    <rect width="660" height="540" rx="14" fill="#ffffff"/>
+    <rect width="660" height="42" rx="14" fill="#34522a"/>
+    <rect y="20" width="660" height="22" fill="#34522a"/>
+    <g fill="#c7dbc0">
+      <circle cx="22" cy="21" r="5"/>
+      <circle cx="42" cy="21" r="5"/>
+      <circle cx="62" cy="21" r="5"/>
+    </g>
+    <rect x="180" y="13" width="300" height="16" rx="8" fill="#426a45"/>
+
+    <rect x="0" y="42" width="170" height="498" fill="#edf5e9"/>
+    <rect x="18" y="68" width="134" height="30" rx="6" fill="#7a9374"/>
+    <rect x="18" y="112" width="134" height="86" rx="8" fill="#ffffff"/>
+    <text x="32" y="135" font-family="Arial, sans-serif" font-size="10" fill="#34522a" font-weight="700">SCORE</text>
+    <g transform="translate(26 148)">
+      <rect width="26" height="14" fill="#002814"/>
+      <rect x="26" width="26" height="14" fill="#34522a"/>
+      <rect x="52" width="26" height="14" fill="#7a9374"/>
+      <rect x="78" width="26" height="14" fill="#c7dbc0"/>
+    </g>
+    <text x="32" y="186" font-family="Arial, sans-serif" font-size="9" fill="#426a45">0 · 2 · 4 · 6 · 8</text>
+
+    <rect x="18" y="216" width="134" height="40" rx="6" fill="#ffffff"/>
+    <circle cx="36" cy="236" r="8" fill="#34522a"/>
+    <text x="52" y="240" font-family="Arial, sans-serif" font-size="10" fill="#34522a">Plantabilité</text>
+
+    <rect x="18" y="266" width="134" height="40" rx="6" fill="#ffffff"/>
+    <circle cx="36" cy="286" r="8" fill="#7a9374"/>
+    <text x="52" y="290" font-family="Arial, sans-serif" font-size="10" fill="#426a45">Chaleur urb.</text>
+
+    <rect x="18" y="316" width="134" height="40" rx="6" fill="#ffffff"/>
+    <circle cx="36" cy="336" r="8" fill="#97b090"/>
+    <text x="52" y="340" font-family="Arial, sans-serif" font-size="10" fill="#426a45">Végétation</text>
+
+    <rect x="18" y="366" width="134" height="40" rx="6" fill="#ffffff"/>
+    <circle cx="36" cy="386" r="8" fill="#c7dbc0"/>
+    <text x="52" y="390" font-family="Arial, sans-serif" font-size="10" fill="#426a45">Zones clim.</text>
+
+    <g transform="translate(170 42)">
+      <rect width="490" height="498" fill="#edf5e9"/>
+
+      <g>
+        <rect x="10" y="10" width="88" height="72" rx="6" fill="#97b090"/>
+        <rect x="108" y="10" width="88" height="72" rx="6" fill="#c7dbc0"/>
+        <rect x="206" y="10" width="88" height="72" rx="6" fill="#7a9374"/>
+        <rect x="304" y="10" width="88" height="72" rx="6" fill="#c7dbc0"/>
+        <rect x="402" y="10" width="88" height="72" rx="6" fill="#97b090"/>
+
+        <rect x="10" y="92" width="88" height="72" rx="6" fill="#7a9374"/>
+        <rect x="108" y="92" width="88" height="72" rx="6" fill="#426a45"/>
+        <rect x="206" y="92" width="88" height="72" rx="6" fill="#34522a"/>
+        <rect x="304" y="92" width="88" height="72" rx="6" fill="#7a9374"/>
+        <rect x="402" y="92" width="88" height="72" rx="6" fill="#97b090"/>
+
+        <rect x="10" y="174" width="88" height="72" rx="6" fill="#426a45"/>
+        <rect x="108" y="174" width="88" height="72" rx="6" fill="#34522a"/>
+        <rect x="206" y="174" width="88" height="72" rx="6" fill="#002814"/>
+        <rect x="304" y="174" width="88" height="72" rx="6" fill="#34522a"/>
+        <rect x="402" y="174" width="88" height="72" rx="6" fill="#426a45"/>
+
+        <rect x="10" y="256" width="88" height="72" rx="6" fill="#7a9374"/>
+        <rect x="108" y="256" width="88" height="72" rx="6" fill="#426a45"/>
+        <rect x="206" y="256" width="88" height="72" rx="6" fill="#34522a"/>
+        <rect x="304" y="256" width="88" height="72" rx="6" fill="#426a45"/>
+        <rect x="402" y="256" width="88" height="72" rx="6" fill="#7a9374"/>
+
+        <rect x="10" y="338" width="88" height="72" rx="6" fill="#97b090"/>
+        <rect x="108" y="338" width="88" height="72" rx="6" fill="#7a9374"/>
+        <rect x="206" y="338" width="88" height="72" rx="6" fill="#426a45"/>
+        <rect x="304" y="338" width="88" height="72" rx="6" fill="#7a9374"/>
+        <rect x="402" y="338" width="88" height="72" rx="6" fill="#c7dbc0"/>
+
+        <rect x="10" y="420" width="88" height="68" rx="6" fill="#c7dbc0"/>
+        <rect x="108" y="420" width="88" height="68" rx="6" fill="#97b090"/>
+        <rect x="206" y="420" width="88" height="68" rx="6" fill="#7a9374"/>
+        <rect x="304" y="420" width="88" height="68" rx="6" fill="#c7dbc0"/>
+        <rect x="402" y="420" width="88" height="68" rx="6" fill="#97b090"/>
+      </g>
+
+      <rect x="206" y="174" width="88" height="72" rx="6" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+
+      <g transform="translate(250 210)">
+        <circle r="22" fill="#ffffff"/>
+        <circle r="22" fill="#34522a" opacity="0.18"/>
+        <circle r="8" fill="#34522a"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(70 640)">
+    <rect width="200" height="100" rx="10" fill="#ffffff"/>
+    <text x="20" y="34" font-family="Arial, sans-serif" font-size="10" fill="#7a9374" font-weight="700" letter-spacing="1.2">PLANTABILITÉ</text>
+    <text x="20" y="74" font-family="Arial, sans-serif" font-size="32" fill="#002814" font-weight="800">8</text>
+    <text x="50" y="74" font-family="Arial, sans-serif" font-size="14" fill="#7a9374">/ 10</text>
+    <g transform="translate(110 50)">
+      <rect width="68" height="6" rx="3" fill="#edf5e9"/>
+      <rect width="54" height="6" rx="3" fill="#34522a"/>
+    </g>
+    <g transform="translate(110 68)">
+      <rect width="68" height="6" rx="3" fill="#edf5e9"/>
+      <rect width="40" height="6" rx="3" fill="#7a9374"/>
+    </g>
+  </g>
+
+  <g transform="translate(290 640)">
+    <rect width="200" height="100" rx="10" fill="#ffffff"/>
+    <text x="20" y="34" font-family="Arial, sans-serif" font-size="10" fill="#7a9374" font-weight="700" letter-spacing="1.2">CHALEUR</text>
+    <g transform="translate(20 50)">
+      <rect x="0" y="30" width="14" height="20" fill="#c7dbc0"/>
+      <rect x="20" y="20" width="14" height="30" fill="#97b090"/>
+      <rect x="40" y="10" width="14" height="40" fill="#7a9374"/>
+      <rect x="60" y="0" width="14" height="50" fill="#426a45"/>
+      <rect x="80" y="15" width="14" height="35" fill="#34522a"/>
+      <rect x="100" y="25" width="14" height="25" fill="#002814"/>
+    </g>
+    <text x="140" y="74" font-family="Arial, sans-serif" font-size="14" fill="#34522a" font-weight="700">+2.1°C</text>
+  </g>
+
+  <g transform="translate(510 640)">
+    <rect width="220" height="100" rx="10" fill="#ffffff"/>
+    <text x="20" y="34" font-family="Arial, sans-serif" font-size="10" fill="#7a9374" font-weight="700" letter-spacing="1.2">VÉGÉTATION</text>
+    <g transform="translate(20 50)">
+      <circle cx="22" cy="22" r="22" fill="#edf5e9"/>
+      <path d="M22 22 L22 0 A22 22 0 0 1 41.05 33 Z" fill="#34522a"/>
+      <path d="M22 22 L41.05 33 A22 22 0 0 1 8.55 38.69 Z" fill="#7a9374"/>
+    </g>
+    <g transform="translate(80 50)">
+      <circle cx="6" cy="8" r="4" fill="#34522a"/>
+      <text x="18" y="12" font-family="Arial, sans-serif" font-size="9" fill="#34522a" font-weight="600">Arborée 52%</text>
+      <circle cx="6" cy="28" r="4" fill="#7a9374"/>
+      <text x="18" y="32" font-family="Arial, sans-serif" font-size="9" fill="#426a45">Arbustive</text>
+      <circle cx="6" cy="44" r="4" fill="#c7dbc0"/>
+      <text x="18" y="48" font-family="Arial, sans-serif" font-size="9" fill="#426a45">Herbacée</text>
+    </g>
+  </g>
+
+  <g transform="translate(70 770)">
+    <rect width="660" height="80" rx="10" fill="#ffffff"/>
+    <text x="20" y="36" font-family="Arial, sans-serif" font-size="10" fill="#7a9374" font-weight="700" letter-spacing="1.2">SUIVI DIACHRONIQUE</text>
+    <g stroke="#34522a" stroke-width="2" fill="none" stroke-linecap="round">
+      <polyline points="20,62 80,55 140,48 200,52 260,42 320,38 380,32 440,28 500,30 560,24 620,20 640,18"/>
+    </g>
+    <g fill="#34522a">
+      <circle cx="20" cy="62" r="2.5"/>
+      <circle cx="200" cy="52" r="2.5"/>
+      <circle cx="380" cy="32" r="2.5"/>
+      <circle cx="560" cy="24" r="2.5"/>
+      <circle cx="640" cy="18" r="3.5"/>
+    </g>
+  </g>
+</svg>
