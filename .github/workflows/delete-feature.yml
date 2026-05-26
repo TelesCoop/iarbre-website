@@ -18,7 +18,6 @@ jobs:
         with:
           playbook: cleanup.yml
           directory: deploy
-          vault_password: ${{ secrets.ANSIBLE_VAULT_KEY }}
           options: |
             -e branch=${{ env.BRANCH_NAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}

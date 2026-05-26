@@ -4,8 +4,6 @@ main_user: iarbre
 main_user_uid: 10045
 
 use_password: false
-username: "{{ vault_website_username }}"
-password: "{{ vault_website_password }}"
 
 backend_repo: git@github.com:TelesCoop/iarbre-website.git
 backend_identity_file_path: /home/{{ main_user }}/.ssh/id_ed25519_website

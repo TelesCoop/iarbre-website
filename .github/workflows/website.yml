@@ -33,7 +33,6 @@ jobs:
         with:
           playbook: website.yml
           directory: deploy
-          vault_password: ${{ secrets.ANSIBLE_VAULT_KEY }}
           options: |
             -l ${{ env.ENVIRONMENT }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
