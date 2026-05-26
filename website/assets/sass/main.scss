@@ -17,14 +17,14 @@ $primary-900: #002814;
 $primary: $primary-500;
 $primaryLight: $primary-300;
 
-// Gold scale (warm mustard, anchored on #D6AE3E)
-$gold-50: #faf2d9;
-$gold-100: #efdda3;
-$gold-200: #e2c773;
-$gold-300: #d6ae3e;
-$gold-500: #b08a26;
-$gold-700: #7a611c;
-$gold-900: #423410;
+// Gold scale (soft warm pastel yellow)
+$gold-50: #faf3e1;
+$gold-100: #f5e8c2;
+$gold-200: #eedaa3;
+$gold-300: #e6cf8a;
+$gold-500: #c4ab66;
+$gold-700: #82703b;
+$gold-900: #40371a;
 
 $gold: $gold-300;
 
@@ -1029,6 +1029,7 @@ body.drawer-open {
   .consortium-header {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: $spacing-sm;
     margin-bottom: $spacing-md;
   }
@@ -1196,223 +1197,156 @@ body.drawer-open {
 // TEAM SECTION
 // =============================================================================
 
-.team-section {
+.team-page {
   background: $white;
   padding-block: 4rem;
 
   @media (min-width: 640px) {
     padding-block: 5rem;
   }
+}
 
-  .container {
-    overflow: visible;
+.team-container {
+  max-width: $content-width-xl;
+  margin-inline: auto;
+  padding-inline: $spacing-lg;
+
+  @media (min-width: $desktop-large) {
+    max-width: $content-width-2xl;
+  }
+}
+
+.team-page-header {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  max-width: 760px;
+  margin-bottom: $spacing-xxl * 1.5;
+}
+
+.team-page-eyebrow {
+  font-size: $font-xs;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $primary;
+}
+
+.team-page-title {
+  font-family: $main-font, Arial, sans-serif;
+  font-size: clamp(2.25rem, calc(2.5vw + 1.5rem), 4rem);
+  color: $primary;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+.team-page-subtitle {
+  font-size: $font-lg;
+  color: $gray;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 620px;
+}
+
+.team-groups {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xxl;
+}
+
+.team-group {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+}
+
+.team-group-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: $spacing-md;
+  padding-bottom: $spacing-md;
+  border-bottom: $border-thin solid $primary-100;
+  flex-wrap: wrap;
+}
+
+.team-group-name {
+  font-family: $main-font, Arial, sans-serif;
+  font-size: $font-2xl;
+  color: $primary;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+.team-group-count {
+  font-size: $font-sm;
+  color: $gray;
+}
+
+.team-group-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $spacing-lg;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .team-header {
-    margin-bottom: $spacing-xxl;
-
-    .team-intro-content {
-      display: flex;
-      gap: $spacing-xxl;
-      align-items: flex-start;
-
-      @media (max-width: $mobile) {
-        flex-direction: column;
-        gap: $spacing-xl;
-      }
-    }
-
-    .team-intro-text {
-      flex: 0 0 auto;
-      width: 350px;
-      max-width: 100%;
-
-      @media (max-width: $mobile) {
-        width: 100%;
-        text-align: center;
-      }
-
-      .section-title {
-        font-family: $main-font, Arial, sans-serif;
-        font-size: $font-4xl;
-        color: $primary;
-        margin-bottom: $spacing-xl;
-        font-weight: 700;
-
-        @media (max-width: $mobile) {
-          font-size: $font-3xl;
-          margin-bottom: $spacing-lg;
-        }
-      }
-
-      .team-description {
-        font-size: $font-lg;
-        color: $gray;
-        line-height: 1.7;
-        margin-bottom: $spacing-lg;
-
-        @media (max-width: $mobile) {
-          font-size: $font-base;
-          margin-bottom: $spacing-lg;
-        }
-      }
-
-      .navigation-arrows {
-        display: flex;
-        gap: $spacing-md;
-        margin-top: $spacing-xl;
-
-        @media (max-width: $mobile) {
-          justify-content: center;
-          margin-top: $spacing-lg;
-        }
-
-        .nav-arrow {
-          width: $button-size-md;
-          height: $button-size-md;
-          border: $border-medium solid $border-solid;
-          background: transparent;
-          border-radius: $radius-round;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          transition: all $transition-fast;
-          color: $primary;
-
-          @media (max-width: $mobile) {
-            width: $button-size-sm;
-            height: $button-size-sm;
-          }
-
-          &:hover:not(:disabled) {
-            background: $primary;
-            color: $white;
-          }
-
-          &:disabled {
-            opacity: 0.3;
-            cursor: not-allowed;
-          }
-
-          svg {
-            width: $icon-size-md;
-            height: $icon-size-md;
-
-            @media (max-width: $mobile) {
-              width: $icon-size-sm;
-              height: $icon-size-sm;
-            }
-          }
-        }
-      }
-    }
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-md;
   }
 
-  .team-carousel {
-    overflow: hidden;
-    position: relative;
-    flex: 1;
-    min-width: 0;
-
-    @media (max-width: $mobile) {
-      width: 100%;
-    }
-
-    .team-slider {
-      display: flex;
-      gap: $spacing-lg;
-      transition: transform 0.4s ease;
-      width: fit-content;
-
-      .team-member-card {
-        width: $card-width-md;
-        flex-shrink: 0;
-        background: $white;
-        border-radius: $radius-lg;
-        overflow: hidden;
-        border: $border-thin solid $primary-100;
-        transition: border-color $transition-fast;
-
-        @media (max-width: $mobile) {
-          width: calc(100vw - 80px);
-          max-width: $card-width-sm;
-        }
-
-        &:hover {
-          border-color: $primary-200;
-        }
-
-        .member-photo-container {
-          height: $image-height-lg;
-          overflow: hidden;
-          position: relative;
-
-          @media (max-width: $mobile) {
-            height: $image-height-sm;
-          }
-
-          .member-photo {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform $transition-medium;
-          }
-        }
-
-        .member-details {
-          padding: $spacing-lg;
-          background: $white;
-
-          @media (max-width: $mobile) {
-            padding: $spacing-md;
-          }
-
-          .member-name {
-            font-family: $main-font, Arial, sans-serif;
-            font-size: $font-xl;
-            color: $primary;
-            font-weight: 700;
-            margin-bottom: $spacing-xs;
-            line-height: 1.3;
-
-            @media (max-width: $mobile) {
-              font-size: $font-lg;
-            }
-          }
-
-          .member-position {
-            font-family: $main-font, Arial, sans-serif;
-            font-size: $font-md;
-            color: $primary;
-            font-weight: 600;
-            margin-bottom: $spacing-xs;
-            line-height: 1.3;
-
-            @media (max-width: $mobile) {
-              font-size: $font-sm;
-            }
-          }
-
-          .member-role {
-            font-family: $main-font, Arial, sans-serif;
-            font-size: $font-sm;
-            color: $gray;
-            margin-bottom: $spacing-md;
-            line-height: 1.4;
-            font-style: italic;
-
-            @media (max-width: $mobile) {
-              font-size: $font-xs;
-            }
-          }
-        }
-
-        &:hover .member-photo {
-        }
-      }
-    }
+  @media (max-width: $mobile-small) {
+    grid-template-columns: 1fr;
   }
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+}
+
+.team-card-photo {
+  aspect-ratio: 1 / 1;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  background: $primary-50;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.team-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs/2;
+  padding-inline: $spacing-xs;
+}
+
+.team-card-name {
+  font-family: $main-font, Arial, sans-serif;
+  font-size: $font-base;
+  color: $primary;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.team-card-role {
+  font-size: $font-sm;
+  color: $gray;
+  line-height: 1.4;
+  margin: 0;
 }
 
 // =============================================================================
@@ -1726,6 +1660,19 @@ body.drawer-open {
       background: $primary-50;
       border-color: $primary;
       color: $primary;
+      text-decoration: none;
+    }
+  }
+
+  &.btn-gold {
+    background: $gold-300;
+    color: $primary-900;
+    border-color: $gold-300;
+
+    &:hover {
+      background: $gold-500;
+      border-color: $gold-500;
+      color: $primary-900;
       text-decoration: none;
     }
   }

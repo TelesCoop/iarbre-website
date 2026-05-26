@@ -34,10 +34,6 @@
   title: Chercheur Sciences de données urbaines
   function: Université Lumière Lyon 2 / LIRIS
   portrait: jsamuel.png
-- name: Antoine Bernier
-  title: Développeur
-  function: TelesCoop
-  portrait: portrait.png
 - name: Romain Matias
   title: Chef de projet, Développeur
   function: Exo-Dev
@@ -62,10 +58,6 @@
   title: Stagiaire – Développeur
   function: CPE Lyon – Université Lumière Lyon 2 / LIRIS
   portrait: pachiron.png
-- name: Maxime Bellec
-  title: Développeur
-  function: TelesCoop
-  portrait: bel.png
 - name: Mika Inisan
   title: Data-scientist
   function: Université Lumière Lyon 2 / LIRIS
