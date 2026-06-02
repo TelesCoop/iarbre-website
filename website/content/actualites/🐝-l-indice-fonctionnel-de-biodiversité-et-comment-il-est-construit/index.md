@@ -1,6 +1,6 @@
 ---
 title: 🐝 L'indice fonctionnel de biodiversité et comment il est construit
-draft: true
+draft: false
 publishDate: 2026-06-02T14:41:00
 layout: post
 author: L'équipe IA·rbre
