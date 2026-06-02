@@ -26,11 +26,12 @@ Les neuf limites sont :
 8. l’appauvrissement de la couche d’ozone, 
 9. et l’augmentation des particules dans l’atmosphère.
 
-![Les limites planétaires](schema9.png "Les limites planétaires")
+![Les limites planétaires](schema9.png)
 
 > 📌 **Le problème de l’échelle** : Ces limites sont définies à l’échelle de la planète. Elles disent ce que la Terre peut absorber dans son ensemble. Elles ne disent pas ce qu’un territoire de 500 km² comme la Métropole de Lyon doit préserver pour maintenir ses propres fonctions écologiques. C’est précisément ce que l’indice fonctionnel de biodiversité cherche à résoudre.
-> >
->   ---
+
+
+  ---
 
 ## Ce que l’indice mesure : et pourquoi ces fonctions ?
 
@@ -46,9 +47,9 @@ L’enjeu n’est pas de mesurer la biodiversité en tant que telle, le nombre d
 
 > 📌 **Une base scientifique solide** : l’indicateur s’appuie sur une étude publiée dans _One Earth_ ([Mohamed et al., 2024](https://www.cell.com/one-earth/fulltext/S2590-3322(23)00564-X)), elle-même issue d’une revue systématique de plus de **4 000 publications** en écologie et en santé. Le résultat est une cible claire : un minimum de **20 à 25 % d’espaces (semi)-naturels dans le km² environnant** est nécessaire en tout point d’un territoire pour maintenir ces fonctions écologiques.
 
-![L'impact positif de la biodiversité](plan2.png "L'impact positif de la biodiversité")
+![L'impact positif de la biodiversité](plan2.png)
 
-  --
+  ---
 
 ## Comment l’indicateur est calculé ?
 
@@ -56,17 +57,10 @@ L’enjeu n’est pas de mesurer la biodiversité en tant que telle, le nombre d
 
 Pour savoir si un sol est naturel ou dominé par l’activité humaine, il faut une source de données à la fois précise et suffisamment fine pour détecter une haie, un alignement d’arbres ou un jardin de quelques mètres carrés.
 
-Émile Balembois, doctorant au laboratoire EVS des Mines de Saint-Étienne, a identifié deux critères
+Émile Balembois, doctorant au laboratoire EVS des Mines de Saint-Étienne, a identifié deux critères non négociables pour le choix des données :
 
-non négociables pour le choix des données :
-
-- Une r**ésolution de l’ordre du mètre**, suffisante pour repérer des éléments végétaux isolés
-
-(arbres individuels, haies, bandes enherbées).
-
-- La capacité à **distinguer les espaces semi-naturels** (une plantation d’arbres, un parc aménagé)
-
-des espaces entièrement naturels (une forêt, une ripisylve, une zone humide).
+- Une r**ésolution de l’ordre du mètre**, suffisante pour repérer des éléments végétaux isolés (arbres individuels, haies, bandes enherbées).
+- La capacité à **distinguer les espaces semi-naturels** (une plantation d’arbres, un parc aménagé) des espaces entièrement naturels (une forêt, une ripisylve, une zone humide).
 
 Ce sont finalement deux sources produites par l’IGN qui ont été retenues :
 
@@ -84,4 +78,4 @@ A partir de ces deux sources de données le territoire de la métropole de Lyon 
 
 **0 = dominé par l'Homme** et  **1 = naturel avec une carroyage de 4mx4m.**
 
-![Les catégories d'occupation des sols](megmap.png "Les catégories d'occupation des sols")
+![Les catégories d'occupation des sols](megmap.png)
