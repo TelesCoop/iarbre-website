@@ -16,15 +16,15 @@ pour mesurer l’impact de l’activité humaine sur les grands équilibres de l
 
 Les neuf limites sont : 
 
-    1. le changement climatique,
-1. la destruction de la biodiversité, 
-2. l’utilisation massive d’engrais (azote et phosphore), 
-3. le changement d’usage des sols (déforestation), 
-4. le cycle de l’eau douce,
-5. le rejet de nouvelles substances dans la nature,
-6. l’acidification des océans, 
-7. l’appauvrissement de la couche d’ozone, 
-8. et l’augmentation des particules dans l’atmosphère.
+1. le changement climatique,
+2. la destruction de la biodiversité, 
+3. l’utilisation massive d’engrais (azote et phosphore), 
+4. le changement d’usage des sols (déforestation), 
+5. le cycle de l’eau douce,
+6. le rejet de nouvelles substances dans la nature,
+7. l’acidification des océans, 
+8. l’appauvrissement de la couche d’ozone, 
+9. et l’augmentation des particules dans l’atmosphère.
 
 ![Les limites planétaires](schema9.png "Les limites planétaires")
 
