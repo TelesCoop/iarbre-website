@@ -4,9 +4,7 @@ draft: false
 publishDate: 2026-06-02T14:41:00
 layout: post
 author: L'équipe IA·rbre
-summary: |-
-  Planter des arbres, végétaliser des cours, désimperméabiliser des trottoirs : ces actions ont un sens à l’échelle d’une rue. Mais comment savoir si elles suffisent à maintenir les fonctions écologiques à l’échelle d’un territoire ? C’est la question à laquelle répond l’indice fonctionnel
-  de biodiversité.
+summary: 'Planter des arbres, végétaliser des cours, désimperméabiliser des trottoirs : ces actions ont un sens à l’échelle d’une rue. Mais comment savoir si elles suffisent à maintenir les fonctions écologiques à l’échelle d’un territoire ? C’est la question à laquelle répond l’indice fonctionnel de biodiversité.'
 ---
 
 ## Un ancrage dans les limites planétaires
@@ -29,7 +27,6 @@ Les neuf limites sont :
 ![Les limites planétaires](schema9.png)
 
 > 📌 **Le problème de l’échelle** : Ces limites sont définies à l’échelle de la planète. Elles disent ce que la Terre peut absorber dans son ensemble. Elles ne disent pas ce qu’un territoire de 500 km² comme la Métropole de Lyon doit préserver pour maintenir ses propres fonctions écologiques. C’est précisément ce que l’indice fonctionnel de biodiversité cherche à résoudre.
-
 
   ---
 
