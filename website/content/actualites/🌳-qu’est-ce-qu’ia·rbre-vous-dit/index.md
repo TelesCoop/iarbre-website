@@ -1,6 +1,6 @@
 ---
-title: 🌳 Qu’est-ce qu’IA·rbre vous dit
-draft: true
+title: 🍀 Qu’est-ce qu’IA·rbre vous dit
+draft: false
 publishDate: 2026-06-03T09:24:00
 layout: post
 author: L'équipe IA·rbre
@@ -22,9 +22,10 @@ IA·rbre propose aussi une carte exclusive :
 - Un **inventaire du végétal** découpé en 3 strates (haute, moyenne et basse) produit à partir du LIDAR métropolitain 2023 et des orthophotos métropolitaines 2023
 
 > 📌 Note technique : Le score de plantabilité est calculé à une résolution de 5×5 mètres. Ce n’est pas anodin : à cette échelle un réseau ENEDIS peut faire basculer le score d’une parcelle. La précision est une force et une limite à la fois.
-![Exemple de visualisation des zones climatiques locales](Capture%20d%27%C3%A9cran%202026-02-05%20104238.png)
+> ![Exemple de visualisation des zones climatiques locales](Capture%20d%27%C3%A9cran%202026-02-05%20104238.png)
 
 # 
+
 2. Ce que la carte ne calcule pas
 
 **C’est peut-être la question la plus importante à poser avant d’utiliser l’outil.**
