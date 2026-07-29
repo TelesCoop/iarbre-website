@@ -42,7 +42,7 @@ Le projet est actuellement déployé sur la **Métropole de Lyon**, territoire d
 
 ## Feuille de route 2026
 
-![Feuille de route 2026](/images/roadmap.svg)
+![Feuille de route 2026](/images/roadmap.png)
 
 ---
 
