@@ -1,7 +1,7 @@
 ---
 title: ❓Pourquoi l’ombre d’un arbre est particulièrement intéressante ?
 draft: false
-publishDate: 2026-07-29T09:27
+publishDate: 2026-07-29T09:27:00
 layout: post
 author: L'équipe IA·rbre
 summary: Un arbre produit de l'ombre, certes, mais un préau en tôle produit aussi de l'ombre, alors pourquoi se sent-on mieux à l'ombre d'un arbre qu'à l'ombre d'un préau en tôle ?
