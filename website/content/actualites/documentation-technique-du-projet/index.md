@@ -1,5 +1,7 @@
 ---
-title: 📚 Documentation technique du projet
+title: "Documentation technique du projet IA·rbre"
+emoji: "📚"
+description: "Code open source et documentation technique d'IA·rbre : méthodes et données utilisées pour cartographier plantabilité, chaleur et végétation à Lyon."
 draft: false
 publishDate: 2025-06-17T09:08:00
 layout: post

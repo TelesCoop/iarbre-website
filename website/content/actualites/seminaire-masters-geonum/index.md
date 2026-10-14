@@ -1,5 +1,7 @@
 ---
-title: 🤖 Participation de l’équipe d’IA.rbre au séminaire annuel des masters Géonum
+title: "Participation de l'équipe d'IA·rbre au séminaire annuel des masters Géonum"
+emoji: "🤖"
+description: "Table ronde « Données vertes, IA grise » : IA·rbre présente sa démarche d'IA frugale au séminaire des masters Géonum et Sentinelles (Lyon 2, Lyon 3)."
 draft: false
 publishDate: 2026-02-19T09:00:00
 layout: post

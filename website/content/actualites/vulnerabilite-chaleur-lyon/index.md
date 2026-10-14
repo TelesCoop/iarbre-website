@@ -1,5 +1,7 @@
 ---
-title: 🥵 Calque de Vulnérabilité à la chaleur
+title: "Calque de vulnérabilité à la chaleur de la Métropole de Lyon"
+emoji: "🥵"
+description: "Carte de vulnérabilité à la chaleur de la Métropole de Lyon : identifier les quartiers les plus exposés aux vagues de chaleur pour mieux cibler l'adaptation."
 draft: false
 publishDate: 2025-07-24T15:53:00
 layout: post

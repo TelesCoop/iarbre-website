@@ -1,5 +1,7 @@
 ---
-title: ❓Pourquoi l’ombre d’un arbre est particulièrement intéressante ?
+title: "Pourquoi l'ombre d'un arbre est-elle particulièrement intéressante ?"
+emoji: "❓"
+description: "Évapotranspiration, rayonnement, circulation de l'air : pourquoi l'ombre d'un arbre rafraîchit mieux la ville qu'un préau en tôle face à la chaleur."
 draft: false
 publishDate: 2026-07-29T09:27:00
 layout: post

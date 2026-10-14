@@ -1,5 +1,7 @@
 ---
-title: 🌳 L'origine du calque de plantabilité
+title: "L'origine du calque de plantabilité"
+emoji: "🌳"
+description: "Où planter des arbres en ville ? L'histoire du calque de plantabilité, né du plan Nature et de l'objectif de 300 000 arbres de la Métropole de Lyon."
 draft: false
 publishDate: 2025-05-19T12:08:00
 layout: post

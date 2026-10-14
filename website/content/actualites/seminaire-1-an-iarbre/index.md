@@ -1,5 +1,7 @@
 ---
-title: 📅 Retour sur le séminaire des 1 an de  IA·rbre
+title: "Retour sur le séminaire des 1 an d'IA·rbre"
+emoji: "📅"
+description: "Bilan de la première année d'IA·rbre : communes et services de la Métropole de Lyon ont testé la plateforme et co-construit ses prochaines évolutions."
 draft: false
 publishDate: 2026-02-19T10:00:00
 layout: post

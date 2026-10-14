@@ -1,0 +1,42 @@
+# IA·rbre
+
+> IA·rbre est une plateforme open source de cartographie et d'analyse de données territoriales pour adapter les villes au changement climatique. Déployée sur la Métropole de Lyon, elle indique où planter des arbres (plantabilité), quelles zones sont vulnérables à la chaleur (îlots de chaleur urbains, zones climatiques locales), où se trouve la végétation existante et comment évolue la biodiversité en ville.
+
+Le projet est porté par un consortium lyonnais (TelesCoop, Laboratoire Érasme, LIRIS / CNRS, Métropole de Lyon) et financé par la Caisse des Dépôts dans le cadre de France 2030. Le code est publié sous licence GPLv3.
+
+- Carte interactive : https://carte.iarbre.fr
+- Documentation technique et méthodologies : https://docs.iarbre.fr
+- Code source : https://github.com/TelesCoop/iarbre
+- Contact : contact@telescoop.fr
+
+## Comprendre les données
+
+- [Qu'est-ce qu'IA·rbre vous dit ?](https://iarbre.fr/actualites/ce-que-dit-la-carte-iarbre/): ce que calculent le score de plantabilité (tuiles de 5×5 m, note de 0 à 10) et l'atlas de vulnérabilité à la chaleur, et leurs limites
+- [L'origine du calque de plantabilité](https://iarbre.fr/actualites/origine-calque-plantabilite/): pourquoi et comment le calque a été créé, dans le cadre de l'objectif de 300 000 arbres de la Métropole de Lyon
+- [Analyse des facteurs de plantabilité des arbres en ville](https://iarbre.fr/actualites/facteurs-plantabilite-arbres-en-ville/): poids des facteurs (réseaux souterrains, voirie, bâti…) qui facilitent ou bloquent la plantation
+- [Calque de vulnérabilité à la chaleur de la Métropole de Lyon](https://iarbre.fr/actualites/vulnerabilite-chaleur-lyon/): identification des zones les plus exposées aux vagues de chaleur
+- [Qu'est-ce qu'une zone climatique locale (ZCL) ?](https://iarbre.fr/actualites/zone-climatique-locale-zcl/): définition des ZCL / LCZ et leur rôle dans l'étude des îlots de chaleur urbains
+- [Pourquoi l'ombre d'un arbre est-elle particulièrement intéressante ?](https://iarbre.fr/actualites/ombre-arbre-confort-thermique/): évapotranspiration, rayonnement et confort thermique
+- [L'indice fonctionnel de biodiversité et comment il est construit](https://iarbre.fr/actualites/indice-fonctionnel-biodiversite-en-ville/): mesurer la biodiversité en ville à l'échelle d'un territoire
+- [Inventaire stratifié du végétal de la Métropole de Lyon](https://iarbre.fr/actualites/inventaire-strates-vegetation-lyon/): cartographie des strates herbacée, arbustive et arborée par IA (modèle FLAIR de l'IGN)
+- [Méthodologie de création des calques](https://iarbre.fr/actualites/methodologie-calques/): données sources et méthodes de production
+
+## Politiques publiques et terrain
+
+- [PCAET : agir localement pour le climat](https://iarbre.fr/actualites/pcaet-agir-localement-pour-le-climat/): le Plan Climat Air Énergie Territorial et ses étapes
+- [Visite ville perméable à Lyon](https://iarbre.fr/actualites/ville-permeable-lyon/): désimperméabilisation, noues, arbres de pluie
+- [iPAVÉ : du vert dans les données !](https://iarbre.fr/actualites/ipave-du-vert-dans-les-donnees/): inventaire du patrimoine végétal de voirie
+
+## Projet
+
+- [À propos du projet IA·rbre](https://iarbre.fr/a-propos/): mission, objectifs, méthodologie et feuille de route
+- [L'équipe IA·rbre](https://iarbre.fr/equipe/): membres du consortium
+- [Actualités](https://iarbre.fr/actualites/): toutes les publications
+
+## Optional
+
+- [Signature de la convention du projet IA·rbre](https://iarbre.fr/actualites/signature-de-la-convention/)
+- [Retour sur le séminaire des 1 an d'IA·rbre](https://iarbre.fr/actualites/seminaire-1-an-iarbre/)
+- [Participation au séminaire annuel des masters Géonum](https://iarbre.fr/actualites/seminaire-masters-geonum/)
+- [Journée des parties prenantes : IA·rbre et la gestion de l'eau](https://iarbre.fr/actualites/journee-des-parties-prenantes/)
+- [Documentation technique du projet IA·rbre](https://iarbre.fr/actualites/documentation-technique-du-projet/)

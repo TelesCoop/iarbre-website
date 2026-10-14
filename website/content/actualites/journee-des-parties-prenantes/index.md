@@ -1,5 +1,7 @@
 ---
-title: 🤝 Journée des Parties Prenantes
+title: "Journée des parties prenantes : IA·rbre et la gestion de l'eau"
+emoji: "🤝"
+description: "Présentation d'IA·rbre à la Journée des parties prenantes sur l'eau : nos travaux sur la gestion de l'eau en ville et la désimperméabilisation."
 draft: false
 publishDate: 2025-06-17T09:00:00
 layout: post

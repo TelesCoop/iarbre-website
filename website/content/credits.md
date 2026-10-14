@@ -5,8 +5,6 @@ layout: page
 description: Remerciements et crédits du projet IA·rbre
 ---
 
-# Crédits
-
 ## Équipe du projet
 
 Le projet IA.rbre est porté par un consortium d'acteurs engagés dans la transition écologique et l'innovation territoriale.

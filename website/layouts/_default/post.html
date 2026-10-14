@@ -4,14 +4,14 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "@id": "{{ .Permalink }}#article",
-    "headline": {{ .Title | jsonify }},
-    "description": {{ .Summary | plainify | jsonify }},
+    "headline": {{ .Title }},
+    "description": {{ .Description | default .Summary | plainify }},
     "url": "{{ .Permalink }}",
     "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
     "author": {
       "@type": "Organization",
-      "name": {{ .Params.Author | default "L'équipe IA·rbre" | jsonify }},
+      "name": {{ .Params.Author | default "L'équipe IA·rbre" }},
       "@id": "https://iarbre.fr/#organization"
     },
     "publisher": { "@id": "https://iarbre.fr/#organization" },
@@ -26,7 +26,7 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://iarbre.fr/" },
       { "@type": "ListItem", "position": 2, "name": "Actualités", "item": "https://iarbre.fr/actualites/" },
-      { "@type": "ListItem", "position": 3, "name": {{ .Title | jsonify }}, "item": "{{ .Permalink }}" }
+      { "@type": "ListItem", "position": 3, "name": {{ .Title }}, "item": "{{ .Permalink }}" }
     ]
   }
 </script>
@@ -38,7 +38,7 @@
       <header class="article-header">
         <a href="/actualites/" class="article-back">← Actualités</a>
 
-        <h1 class="article-title">{{ .Title }}</h1>
+        <h1 class="article-title">{{ with .Params.emoji }}<span aria-hidden="true">{{ . }}</span> {{ end }}{{ .Title }}</h1>
 
         <div class="article-meta">
           <div class="article-meta-author">
@@ -90,7 +90,7 @@
             <span class="related-article-date"
               >{{ .PublishDate | time.Format "02 Jan 2006" }}</span
             >
-            <h3 class="related-article-title">{{ .Title }}</h3>
+            <h3 class="related-article-title">{{ with .Params.emoji }}<span aria-hidden="true">{{ . }}</span> {{ end }}{{ .Title }}</h3>
             <span class="related-article-cta">Lire →</span>
           </div>
         </a>

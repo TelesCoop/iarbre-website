@@ -1,5 +1,7 @@
 ---
-title: '🌍 PCAET : agir localement pour le climat'
+title: "PCAET : agir localement pour le climat"
+emoji: "🌍"
+description: "Qu'est-ce qu'un Plan Climat Air Énergie Territorial (PCAET) ? Ses 4 étapes et comment les données territoriales aident les collectivités à s'adapter."
 draft: false
 publishDate: 2025-05-06T09:35:00
 layout: post

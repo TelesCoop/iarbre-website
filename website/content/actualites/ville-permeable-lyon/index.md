@@ -1,5 +1,7 @@
 ---
-title: 💧 Visite ville perméable
+title: "Visite ville perméable à Lyon"
+emoji: "💧"
+description: "Noues, tranchées d'infiltration, arbres de pluie : visite des aménagements « ville perméable » de la Métropole de Lyon pour désimperméabiliser la ville."
 draft: false
 publishDate: 2025-09-16T09:55:00
 layout: post

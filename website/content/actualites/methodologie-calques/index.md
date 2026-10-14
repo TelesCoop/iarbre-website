@@ -1,5 +1,7 @@
 ---
-title: ⚙️ Méthodologie des créations des calques
+title: "Méthodologie de création des calques"
+emoji: "⚙️"
+description: "Données et méthodes utilisées par IA·rbre pour produire les calques de plantabilité, de vulnérabilité à la chaleur et de végétation : une démarche ouverte."
 draft: false
 publishDate: 2025-10-16T16:17:00
 layout: post

@@ -35,7 +35,7 @@
       {{ end }}
       <div class="blog-featured-content">
         <span class="blog-featured-badge">À la une</span>
-        <h2 class="blog-featured-title">{{ $featured.Title }}</h2>
+        <h2 class="blog-featured-title">{{ with $featured.Params.emoji }}<span aria-hidden="true">{{ . }}</span> {{ end }}{{ $featured.Title }}</h2>
         <p class="blog-featured-summary">
           {{ $featured.Summary | plainify | truncate 220 }}
         </p>
@@ -89,7 +89,7 @@
                 >{{ math.Round (div (countwords .Content) 200.0) }} min</span
               >
             </div>
-            <h3 class="blog-card-title">{{ .Title }}</h3>
+            <h3 class="blog-card-title">{{ with .Params.emoji }}<span aria-hidden="true">{{ . }}</span> {{ end }}{{ .Title }}</h3>
             <p class="blog-card-summary">
               {{ .Summary | plainify | truncate 130 }}
             </p>

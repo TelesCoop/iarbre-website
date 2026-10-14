@@ -1,5 +1,6 @@
 ---
-title: Signature de la convention du projet IA·rbre
+title: "Signature de la convention du projet IA·rbre"
+description: "Lancement officiel d'IA·rbre le 22 mai 2025 à l'Urban Lab : une plateforme pour adapter la Métropole de Lyon au changement climatique."
 draft: false
 publishDate: 2025-05-22T16:49:00
 layout: post

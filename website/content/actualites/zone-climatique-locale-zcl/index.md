@@ -1,5 +1,7 @@
 ---
-title: 🔍 Qu'est ce qu'une Zone climatique Locale (ZCL) ?
+title: "Qu'est-ce qu'une zone climatique locale (ZCL) ?"
+emoji: "🔍"
+description: "Définition des zones climatiques locales (ZCL ou LCZ) : un concept clé pour étudier les îlots de chaleur urbains, appliqué à la Métropole de Lyon."
 draft: false
 publishDate: 2025-04-25T12:42:00
 layout: post

@@ -1,5 +1,7 @@
 ---
-title: 🐝 L'indice fonctionnel de biodiversité et comment il est construit
+title: "L'indice fonctionnel de biodiversité et comment il est construit"
+emoji: "🐝"
+description: "Biodiversité en ville : comment l'indice fonctionnel de biodiversité d'IA·rbre mesure si la végétalisation maintient les fonctions écologiques."
 draft: false
 publishDate: 2026-06-02T14:41:00
 layout: post

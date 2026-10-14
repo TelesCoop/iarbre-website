@@ -1,5 +1,7 @@
 ---
-title: 📊 Analyse des facteurs de plantabilité
+title: "Analyse des facteurs de plantabilité des arbres en ville"
+emoji: "📊"
+description: "Qu'est-ce qui rend la plantation d'arbres en ville facile ou difficile ? Analyse statistique des facteurs du calque de plantabilité de Lyon."
 draft: false
 publishDate: 2025-11-25T16:33:00
 layout: post

@@ -29,7 +29,16 @@ collections:
       - label: Titre
         name: title
         required: true
-        hint: Moins de 60 caractères
+        hint: Moins de 60 caractères, sans emoji
+      - label: Emoji
+        name: emoji
+        required: false
+        hint: Affiché devant le titre sur le site, mais absent du titre pour Google
+      - label: Description pour les moteurs de recherche
+        name: description
+        widget: text
+        required: false
+        hint: Environ 150 caractères, avec les mots-clés principaux (ex. îlots de chaleur, végétalisation urbaine, Lyon)
       - label: Brouillon (n'est pas publié sur iarbre.fr)
         name: "draft"
         widget: "boolean"

@@ -6,7 +6,8 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
 
     <!-- Primary Meta Tags -->
-    {{ $title := .Site.Title }} {{ if .Title }} {{ $title = printf "%s | %s"
+    {{ $title := .Site.Title }} {{ if .Params.seoTitle }} {{ $title =
+    .Params.seoTitle }} {{ else if .Title }} {{ $title = printf "%s | %s"
     .Title .Site.Title }} {{ end }}
     <title>{{ $title }}</title>
 

@@ -1,5 +1,7 @@
 ---
-title: 🌱 Inventaire stratifié du végétal
+title: "Inventaire stratifié du végétal de la Métropole de Lyon"
+emoji: "🌱"
+description: "Cartographie des strates herbacée, arbustive et arborée de la Métropole de Lyon par IA (modèle FLAIR de l'IGN), en accès libre sur carte.iarbre.fr."
 draft: false
 publishDate: 2026-01-21T14:24:00
 layout: post

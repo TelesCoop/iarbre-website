@@ -1,5 +1,7 @@
 ---
-title: Végétation urbaine, pourquoi les arbres ne poussent pas n'importe où ?
+title: "Végétation urbaine : pourquoi les arbres ne poussent pas n'importe où ?"
+emoji: "🌱"
+description: "Réseaux souterrains, sols, voirie : pourquoi on ne plante pas un arbre n'importe où en ville, et comment la plantabilité aide à choisir où végétaliser."
 draft: true
 publishDate: 2025-03-25T08:40:00
 layout: post
@@ -7,7 +9,7 @@ author: L'Équipe IArbre
 summary: 'Avant de planter, il faut comprendre. Sous nos pieds, ce ne sont pas que des cailloux et de la terre : ce sont des données.'
 image: "cover.jpg"
 ---
-# 🌱Comprendre la plantabilité, peut-on vraiment planter un arbre ici ?
+## Comprendre la plantabilité, peut-on vraiment planter un arbre ici ?
 
 _Avant de planter, il faut comprendre. Sous nos pieds, ce ne sont pas que des cailloux et de la terre : ce sont des données. Et pour que les arbres trouvent leur place en ville, encore faut-il savoir si le sol le permet. C’est là qu’intervient l’étude de la plantabilité._
 

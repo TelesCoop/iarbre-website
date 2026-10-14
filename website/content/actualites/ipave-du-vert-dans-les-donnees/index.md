@@ -1,5 +1,7 @@
 ---
-title: '🌿 iPAVÉ : du vert dans les données !'
+title: "iPAVÉ : du vert dans les données !"
+emoji: "🌿"
+description: "iPAVÉ, le projet d'inventaire du patrimoine végétal de voirie de la Métropole de Lyon : arbres, arbustes et strates herbacées cartographiés."
 draft: false
 publishDate: 2025-04-25T12:40:00
 layout: post

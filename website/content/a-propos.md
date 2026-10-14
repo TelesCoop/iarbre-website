@@ -1,11 +1,9 @@
 ---
-title: À propos
+title: À propos du projet IA·rbre
 draft: false
 layout: page
-description: En savoir plus sur le projet IA·rbre et ses objectifs
+description: "IA·rbre, projet open source d'un consortium lyonnais : végétalisation, îlots de chaleur et gestion de l'eau guidés par les données."
 ---
-
-# À propos du projet IA·rbre
 
 [Découvrez notre feuille de route pour 2026](#feuille-de-route-2026)
 
