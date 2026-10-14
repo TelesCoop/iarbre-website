@@ -12,7 +12,7 @@ summary: 'Planter des arbres, végétaliser des cours, désimperméabiliser des 
 ## Un ancrage dans les limites planétaires
 
 En 2009, une équipe internationale du _Stockholm Resilience Centre_ a défini neuf indicateurs
-pour mesurer l’impact de l’activité humaine sur les grands équilibres de la planète. Parmi ces neuf limites planétaires, la destruction de la biodiversité est l’une des plus critiques — et l’une des plus difficiles à traduire à l’échelle locale.
+pour mesurer l’impact de l’activité humaine sur les grands équilibres de la planète. Parmi ces neuf limites planétaires, la destruction de la biodiversité est l’une des plus critiques, et l’une des plus difficiles à traduire à l’échelle locale.
 
 Les neuf limites sont : 
 
