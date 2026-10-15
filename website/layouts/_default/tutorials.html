@@ -1,0 +1,75 @@
+{{ define "main" }}
+<div class="blog-page">
+  <div class="blog-container">
+    <header class="blog-page-header">
+      <span class="blog-page-eyebrow">Tutoriels</span>
+      <h1 class="blog-page-title">
+        Comprendre l'utilisation de la carte&nbsp;IA·rbre
+      </h1>
+      <p class="blog-page-subtitle">
+        Retrouvez et partagez les vidéos explicatives de la carte&nbsp;IA·rbre.
+      </p>
+      {{ with .Params.channel }}
+      <a href="{{ . }}" class="btn btn-secondary tutorials-channel" target="_blank" rel="noopener noreferrer">
+        Voir notre chaîne YouTube
+      </a>
+      {{ end }}
+    </header>
+
+    {{ with .Params.presentation }}
+    {{ $title := partial "inline/youtube-title.html" (dict "id" .id "fallback" "Démonstration") }}
+    <article class="tutorial-presentation">
+      <div class="tutorial-video">
+        {{ partial "inline/youtube-iframe.html" (dict "id" .id "title" $title) }}
+      </div>
+      <div class="tutorial-presentation-content">
+        <h2 class="tutorial-presentation-title">{{ $title }}</h2>
+        <p class="tutorial-description">{{ .description }}</p>
+      </div>
+    </article>
+    {{ end }}
+
+    {{ with .Params.fonctionnalites }}
+    <section class="blog-section">
+      <header class="blog-section-header">
+        <h2 class="blog-section-title">Une vidéo, une fonctionnalité</h2>
+        <p class="blog-section-count">Des tutoriels courts, filmés sur mobile</p>
+      </header>
+      <div class="tutorials-grid">
+        {{ range $i, $video := . }}
+        {{ $title := partial "inline/youtube-title.html" (dict "id" $video.id "fallback" (printf "Tutoriel %d" (add $i 1))) }}
+        <article class="tutorial-card">
+          <div class="tutorial-video tutorial-video--vertical">
+            {{ partial "inline/youtube-iframe.html" (dict "id" $video.id "title" $title) }}
+          </div>
+          <h3 class="tutorial-title">{{ $title }}</h3>
+          <p class="tutorial-description">{{ $video.description }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{/* Titre de la vidéo récupéré via oEmbed YouTube, avec repli si indisponible. */}}
+{{ define "partials/inline/youtube-title.html" }}
+  {{ $title := .fallback }}
+  {{ $oembed := printf "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=%s&format=json" .id }}
+  {{ with try (resources.GetRemote $oembed) }}
+    {{ with .Value }}{{ $title = (. | transform.Unmarshal).title }}{{ end }}
+  {{ end }}
+  {{ return $title }}
+{{ end }}
+
+{{ define "partials/inline/youtube-iframe.html" }}
+<iframe
+  src="https://www.youtube-nocookie.com/embed/{{ .id }}"
+  title="{{ .title }}"
+  loading="lazy"
+  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
+{{ end }}

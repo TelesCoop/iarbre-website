@@ -1857,6 +1857,100 @@ body.drawer-open {
 }
 
 // =============================================================================
+// TUTORIALS PAGE
+// =============================================================================
+
+.tutorials-channel {
+  align-self: flex-start;
+  margin-top: $spacing-xs;
+}
+
+.tutorial-presentation {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md $spacing-xl;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .tutorial-video {
+    margin-bottom: 0;
+  }
+}
+
+.tutorial-presentation-content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+}
+
+.tutorial-presentation-title {
+  font-family: $main-font, Arial, sans-serif;
+  font-size: clamp(1.5rem, calc(1.5vw + 1rem), 2.25rem);
+  font-weight: 800;
+  color: $primary;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-xl $spacing-lg;
+
+  @media (min-width: $mobile-small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tutorial-card {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.tutorial-video {
+  aspect-ratio: 16 / 9;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  background: $primary-50;
+  margin-bottom: $spacing-xs;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  &--vertical {
+    aspect-ratio: 3 / 4;
+  }
+}
+
+.tutorial-title {
+  font-family: $main-font, Arial, sans-serif;
+  font-size: $font-lg;
+  font-weight: 700;
+  color: $primary;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.tutorial-description {
+  color: $gray;
+  line-height: 1.6;
+  margin: 0;
+}
+
+// =============================================================================
 // BLOG PAGE (listing)
 // =============================================================================
 
