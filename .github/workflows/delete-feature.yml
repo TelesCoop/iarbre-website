@@ -14,7 +14,7 @@ jobs:
       - name: Extract branch name
         run: echo "BRANCH_NAME=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
       - name: Clean up feature environment
-        uses: dawidd6/action-ansible-playbook@v2
+        uses: dawidd6/action-ansible-playbook@v9
         with:
           playbook: cleanup.yml
           directory: deploy
