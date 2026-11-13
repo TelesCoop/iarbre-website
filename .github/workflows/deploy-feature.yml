@@ -41,7 +41,7 @@ jobs:
             echo "BRANCH_NAME=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
           fi
       - name: Deploy website
-        uses: dawidd6/action-ansible-playbook@v2
+        uses: dawidd6/action-ansible-playbook@v9
         with:
           playbook: website.yml
           directory: deploy
