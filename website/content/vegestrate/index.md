@@ -10,7 +10,31 @@ map: "https://carte.iarbre.fr/vegestrate"
 header:
   eyebrow: "Végéstrate"
   title: "La végétation de votre territoire, arbre par arbre"
-  text: "Herbe, arbustes et arbres cartographiés à 20 cm, avec leur hauteur, à partir du LiDAR et des orthophotographies. Une méthode ouverte, recalculée automatiquement à chaque nouvelle prise de vue aérienne."
+  text: "Herbe, arbustes et arbres cartographiés à 20 cm, avec leur hauteur, à partir du [LiDAR](#lidar) et des orthophotographies. Une méthode ouverte, recalculée automatiquement à chaque nouvelle prise de vue aérienne."
+
+intro:
+  title: "Deux façons de cartographier la végétation"
+  text: "Végéstrate et EVA décrivent toutes deux la végétation de la Métropole de Lyon, avec des méthodes et des cahiers des charges différents. Végéstrate est calculée automatiquement, EVA est dessinée à la main et permet de connaitre aussi les usages."
+  items:
+    - name: "Végéstrate"
+      text:
+        - "Végéstrate est une [méthode ouverte](https://github.com/TelesCoop/vegestrate) développée par TelesCoop avec le laboratoire LIRIS. Elle produit une carte de la végétation à 20 cm, classée en herbe, arbuste (1,5 à 5 m) et arbre (plus de 5 m) ou selon le modèle de hauteur."
+        - "Elle croise deux sources : le LiDAR, qui mesure la hauteur de la végétation, et l'orthophotographie, analysée par FLAIR-HUB, un modèle d'intelligence artificielle de l'IGN qui reconnaît l'herbe et complète le LiDAR, notamment pour les zones proches des bâtiments."
+        - "La méthode est décrite dans un [article scientifique](https://isprs-annals.copernicus.org/articles/XII-4-W2-2026/203/2026/isprs-annals-XII-4-W2-2026-203-2026.pdf) publié dans les ISPRS Annals (Villarroya-Palau et al., 2026)."
+    - name: "EVA 2023"
+      text:
+        - "EVA ([Espaces Végétalisés et Artificialisés](https://www.data.gouv.fr/datasets/classification-2015-des-espaces-vegetalises-et-artificialises-des-communes-de-la-metropole-de-lyon)) est l'inventaire de l'occupation du sol de la Métropole de Lyon, réalisé par la société Geofit par photo-interprétation : des opérateurs observent l'orthophotographie et dessinent à la main des zones, auxquelles ils attribuent une classe (forêt, prairie, culture, jardin, surface imperméabilisée...) et une classe de hauteur. Ils partent principalement des zones classées précédemment comme végétales et des zones où un changement a été détecté automatiquement."
+        - "Par règle de saisie, aucune zone ne fait moins de 100 m² ni moins de 3 m de large."
+    - name: "Le LiDAR, c'est quoi ?"
+      id: lidar
+      text:
+        - "Le LiDAR (Light Detection And Ranging, « détection et mesure de distance par la lumière ») est un scan 3D par laser. Ici il est embarqué dans un avion et la mesure est faite vue du ciel. Le LiDAR envoie des impulsions laser et mesure le temps que met chaque écho à revenir, ce qui donne la position de chaque point touché et donc sa hauteur vu du ciel. Sur la métropole de Lyon c'est du LiDAR THD : 30 points/m² en moyenne, pouvant atteindre 100 points/m² en zone urbaine dense."
+        - "Végéstrate utilise le [LiDAR 2023 de la Métropole de Lyon](https://data.grandlyon.com/portail/fr/jeux-de-donnees/nuage-de-points-lidar-2023-de-la-metropole-de-lyon/info), diffusé sur data.grandlyon.com. Ce LiDAR est déjà pré-classé et permet de détecter la végétation grâce à la signature de retour : avec une grande densité de points là où il y a de la végétation des points vont traverser et rebondir au sol et se perdre alors que sur une surface lisse de toit ou de sol les rebonds seront plus réguliers."
+    - name: "L'orthophotographie, c'est quoi ?"
+      id: orthophotographie
+      text:
+        - "Une orthophotographie est une photographie géoréférencée prise selon un angle définie (ici à la verticale), puis corrigée des déformations dues au relief et à l'objectif. Ici c'est une orthophotographie aérienne, qui a été prise au même moment que le LiDAR. Elle se superpose ainsi exactement à une carte : chaque pixel est à sa position réelle au sol. Les images ont une résolution de 5 cm que nous dégradons à 20 cm pour correspondre à la résolution d'entraînement de FLAIR-HUB."
+        - "Elle montre les couleurs et les textures, ce qui permet de reconnaître l'herbe ou un arbre, mais pas leur hauteur. L'[orthophotographie 2023 de la Métropole de Lyon](https://data.grandlyon.com/portail/fr/jeux-de-donnees/dalles-d-orthophotographie-2023-de-la-metropole-de-lyon/donnees) est l'image de base d'EVA comme de Végéstrate."
 
 figures:
   - value: "92,5 %"
