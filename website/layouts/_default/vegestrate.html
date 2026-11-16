@@ -9,10 +9,27 @@
     <div class="vg-container">
       <span class="vg-eyebrow">{{ $p.header.eyebrow }}</span>
       <h1 class="vg-title">{{ $p.header.title }}</h1>
-      <p class="vg-lead">{{ $p.header.text }}</p>
+      <p class="vg-lead">{{ $page.RenderString $p.header.text }}</p>
       <div class="vg-actions">
         <a href="{{ $p.map }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Voir sur la carte</a>
         <a href="{{ $report.RelPermalink }}" class="btn btn-secondary btn-lg">Rapport technique (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="vg-section vg-section--tinted">
+    <div class="vg-container">
+      <h2 class="vg-section-title">{{ $p.intro.title }}</h2>
+      <p class="vg-section-text">{{ $p.intro.text }}</p>
+      <div class="vg-balance">
+        {{ range $p.intro.items }}
+        <div class="vg-balance-col"{{ with .id }} id="{{ . }}"{{ end }}>
+          <h3 class="vg-balance-name">{{ .name }}</h3>
+          {{ range .text }}
+          <p>{{ $page.RenderString . }}</p>
+          {{ end }}
+        </div>
+        {{ end }}
       </div>
     </div>
   </section>

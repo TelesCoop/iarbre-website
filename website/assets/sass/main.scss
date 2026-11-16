@@ -3448,6 +3448,10 @@ body.drawer-open {
   border-radius: $radius-lg;
   border: $border-thin solid $primary-100;
   background: $white;
+
+  p {
+    line-height: 1.6;
+  }
 }
 
 .vg-balance-name {
