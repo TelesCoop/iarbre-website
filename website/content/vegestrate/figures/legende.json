@@ -1,0 +1,60 @@
+{
+ "eva": [
+  {
+   "label": "Strate arborée (> 3 m)",
+   "color": "#1a7f37"
+  },
+  {
+   "label": "Strate arbustive (1-3 m)",
+   "color": "#8fc31f"
+  },
+  {
+   "label": "Herbacé",
+   "color": "#f2e05c"
+  },
+  {
+   "label": "Boisé multistrate (forêts, haies, fourrés)",
+   "color": "#0b4d23"
+  },
+  {
+   "label": "Eau",
+   "color": "#3c8dde"
+  },
+  {
+   "label": "Non comparable (usage du sol, strates mêlées, cultures)",
+   "color": "#c77dff"
+  }
+ ],
+ "vegestrate": [
+  {
+   "label": "Herbe",
+   "color": "#f2e05c"
+  },
+  {
+   "label": "Arbuste",
+   "color": "#8fc31f"
+  },
+  {
+   "label": "Arbre",
+   "color": "#1a7f37"
+  }
+ ],
+ "accord": [
+  {
+   "label": "Végétal pour EVA et Végéstrate",
+   "color": "#1a7f37"
+  },
+  {
+   "label": "Végétal pour EVA seul",
+   "color": "#e66101"
+  },
+  {
+   "label": "Végétal pour Végéstrate seul",
+   "color": "#5e3c99"
+  },
+  {
+   "label": "EVA non comparable",
+   "color": "#f4c2f4"
+  }
+ ]
+}

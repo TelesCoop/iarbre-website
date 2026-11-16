@@ -1,0 +1,167 @@
+{{ define "main" }}
+{{ $page := . }}
+{{ $p := .Params }}
+{{ $report := .Resources.Get $p.report }}
+{{ $legend := (.Resources.Get "figures/legende.json") | transform.Unmarshal }}
+
+<div class="vg-page">
+  <section class="vg-hero">
+    <div class="vg-container">
+      <span class="vg-eyebrow">{{ $p.header.eyebrow }}</span>
+      <h1 class="vg-title">{{ $p.header.title }}</h1>
+      <p class="vg-lead">{{ $p.header.text }}</p>
+      <div class="vg-actions">
+        <a href="{{ $p.map }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Voir sur la carte</a>
+        <a href="{{ $report.RelPermalink }}" class="btn btn-secondary btn-lg">Rapport technique (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="vg-section" aria-label="Chiffres clés">
+    <div class="vg-container">
+      <ul class="vg-figures">
+        {{ range $p.figures }}
+        <li class="vg-figure">
+          <span class="vg-figure-value">{{ .value }}</span>
+          <span class="vg-figure-text">{{ .text }}</span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+
+  <section class="vg-section vg-section--tinted">
+    <div class="vg-container">
+      <h2 class="vg-section-title">{{ $p.compare.title }}</h2>
+      <p class="vg-section-text">{{ $p.compare.text }}</p>
+
+      {{ $first := index $p.compare.places 0 }}
+      {{ $eva := $page.Resources.Get (printf "figures/%s_eva.jpg" $first.key) }}
+      {{ $veg := $page.Resources.Get (printf "figures/%s_vegestrate.jpg" $first.key) }}
+      <div class="vg-compare" data-compare>
+        <div class="vg-compare-places" role="group" aria-label="Choisir un lieu">
+          {{ range $i, $place := $p.compare.places }}
+          <button
+            type="button"
+            class="vg-compare-place"
+            aria-pressed="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+            data-label="{{ $place.label }}"
+            data-eva="{{ ($page.Resources.Get (printf "figures/%s_eva.jpg" $place.key)).RelPermalink }}"
+            data-vegestrate="{{ ($page.Resources.Get (printf "figures/%s_vegestrate.jpg" $place.key)).RelPermalink }}"
+          >
+            {{ $place.label }}
+          </button>
+          {{ end }}
+        </div>
+
+        <div class="vg-compare-view">
+          <img
+            class="vg-compare-img vg-compare-vegestrate"
+            src="{{ $veg.RelPermalink }}"
+            width="{{ $veg.Width }}"
+            height="{{ $veg.Height }}"
+            alt="Végéstrate 2023 : {{ $first.label }}"
+          />
+          <img
+            class="vg-compare-img vg-compare-eva"
+            src="{{ $eva.RelPermalink }}"
+            width="{{ $eva.Width }}"
+            height="{{ $eva.Height }}"
+            alt="EVA 2023 : {{ $first.label }}"
+          />
+          <span class="vg-compare-divider" aria-hidden="true"></span>
+          <span class="vg-compare-tag vg-compare-tag--left" aria-hidden="true">EVA 2023</span>
+          <span class="vg-compare-tag vg-compare-tag--right" aria-hidden="true">Végéstrate</span>
+          <input
+            class="vg-compare-range"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Part de l'image montrant EVA 2023, le reste montre Végéstrate"
+          />
+        </div>
+
+        <div class="vg-legends">
+          {{ range $key, $name := dict "eva" "EVA 2023" "vegestrate" "Végéstrate" }}
+          <div class="vg-legend">
+            <p class="vg-legend-title">{{ $name }}</p>
+            <ul class="vg-legend-items">
+              {{ range index $legend $key }}
+              <li><span class="vg-swatch" style="background: {{ .color | safeCSS }}"></span>{{ .label }}</li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vg-section">
+    <div class="vg-container">
+      <h2 class="vg-section-title">{{ $p.reasons.title }}</h2>
+      <p class="vg-section-text">{{ $p.reasons.text }}</p>
+      <div class="vg-reasons">
+        {{ range $p.reasons.items }}
+        {{ $img := $page.Resources.Get (printf "figures/%s.jpg" .image) }}
+        <article class="vg-reason">
+          <img
+            src="{{ $img.RelPermalink }}"
+            width="{{ $img.Width }}"
+            height="{{ $img.Height }}"
+            loading="lazy"
+            alt="{{ .title }} : orthophotographie, EVA 2023 et Végéstrate sur 150 m de côté"
+          />
+          <div class="vg-reason-body">
+            <h3 class="vg-reason-title">{{ .title }}</h3>
+            <p>{{ .text }}</p>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="vg-section vg-section--tinted">
+    <div class="vg-container">
+      <h2 class="vg-section-title">{{ $p.balance.title }}</h2>
+      <p class="vg-section-text">{{ $p.balance.text }}</p>
+      <div class="vg-balance">
+        {{ range $p.balance.methods }}
+        <div class="vg-balance-col">
+          <h3 class="vg-balance-name">{{ .name }}</h3>
+          <p class="vg-balance-label">Forces</p>
+          <ul class="vg-balance-list">
+            {{ range .strengths }}
+            <li class="vg-plus"><span class="vg-sign" aria-hidden="true">+</span>{{ . }}</li>
+            {{ end }}
+          </ul>
+          <p class="vg-balance-label">Limites</p>
+          <ul class="vg-balance-list">
+            {{ range .limits }}
+            <li class="vg-minus"><span class="vg-sign" aria-hidden="true">−</span>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="vg-section vg-section--dark">
+    <div class="vg-container">
+      <h2 class="vg-section-title">{{ $p.method.title }}</h2>
+      {{ range $p.method.text }}
+      <p class="vg-section-text">{{ . }}</p>
+      {{ end }}
+      <div class="vg-actions">
+        <a href="{{ $report.RelPermalink }}" class="btn btn-gold">Rapport technique (PDF)</a>
+        <a href="{{ $p.docs }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Méthode détaillée</a>
+        <a href="mailto:contact@telescoop.fr" class="btn btn-secondary">Nous contacter</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+{{ end }}

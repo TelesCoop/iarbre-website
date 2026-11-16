@@ -111,3 +111,28 @@
     }
   });
 })();
+
+(function compareSliders() {
+  document.querySelectorAll("[data-compare]").forEach((root) => {
+    const range = root.querySelector(".vg-compare-range");
+    const eva = root.querySelector(".vg-compare-eva");
+    const vegestrate = root.querySelector(".vg-compare-vegestrate");
+    const places = root.querySelectorAll(".vg-compare-place");
+
+    const update = () => root.style.setProperty("--vg-pos", `${range.value}%`);
+    range.addEventListener("input", update);
+    update();
+
+    places.forEach((button) => {
+      button.addEventListener("click", () => {
+        places.forEach((other) =>
+          other.setAttribute("aria-pressed", String(other === button)),
+        );
+        eva.src = button.dataset.eva;
+        eva.alt = `EVA 2023 : ${button.dataset.label}`;
+        vegestrate.src = button.dataset.vegestrate;
+        vegestrate.alt = `Végéstrate 2023 : ${button.dataset.label}`;
+      });
+    });
+  });
+})();
