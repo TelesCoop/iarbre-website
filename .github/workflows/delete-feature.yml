@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-24.04
     if: github.event.pull_request.head.ref != 'dev' && github.event.pull_request.head.ref != 'main'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Extract branch name
         run: echo "BRANCH_NAME=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
       - name: Clean up feature environment

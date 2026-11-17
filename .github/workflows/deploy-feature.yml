@@ -32,7 +32,7 @@ jobs:
     if: github.event_name == 'pull_request' || (github.event_name == 'push' && needs.check-open-pr.outputs.has_open_pr == 'true')
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Extract branch name
         run: |
           if [ "${{ github.event_name }}" == "push" ]; then
