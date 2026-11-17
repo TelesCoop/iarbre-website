@@ -3,6 +3,3 @@ iarbre.fr:42722 ansible_user=ubuntu
 
 [preprod]
 preprod.iarbre.fr:42722 ansible_user=ubuntu
-
-[feature]
-feature-carte.iarbre.fr:42722 ansible_user=ubuntu

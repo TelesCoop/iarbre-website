@@ -7,18 +7,16 @@ Playbooks de déploiement du site `iarbre.fr` (Hugo statique).
 ```
 deploy/
 ├── ansible.cfg
-├── hosts                       # Inventaire (prod, preprod, feature)
+├── hosts                       # Inventaire (prod, preprod)
 ├── vault.key                   # Mot de passe du vault (gitignored)
 ├── website.yml                 # Playbook principal : build + serve via nginx
-├── cleanup.yml                 # Suppression d'un environnement feature
 ├── group_vars/
 │   ├── all/
 │   │   ├── vars.yml            # Variables communes
 │   │   ├── cross_env_vars.yml
 │   │   └── cross_env_vault.yml # Vault chiffré (credentials)
 │   ├── prod/vars.yml
-│   ├── preprod/vars.yml
-│   └── feature/vars.yml        # Variables paramétrées par `branch`
+│   └── preprod/vars.yml
 └── telescoop-deploy/           # Rôles et tâches partagés (sous-module)
 ```
 
@@ -35,7 +33,7 @@ ansible-vault edit group_vars/all/cross_env_vault.yml
 ```
 
 **Variables sensibles** :
-- `vault_website_username` / `vault_website_password` — credentials htpasswd (preprod, feature)
+- `vault_website_username` / `vault_website_password` — credentials htpasswd (preprod)
 - `vault_github_actions_ssh_private_key` — clé SSH consommée par les workflows CI
 
 ## Première installation d'un nouveau serveur
@@ -69,7 +67,4 @@ ansible-playbook website.yml -l preprod --check --diff
 
 # Forcer un rebuild même sans changement de code
 ansible-playbook website.yml -l preprod -e force_update=true
-
-# Supprimer un environnement feature
-ansible-playbook cleanup.yml -l feature -e branch=<branch-name>
 ```
