@@ -7,7 +7,7 @@ Le projet est porté par un consortium lyonnais (TelesCoop, Laboratoire Érasme,
 - Carte interactive : https://carte.iarbre.fr
 - Documentation technique et méthodologies : https://docs.iarbre.fr
 - Code source : https://github.com/TelesCoop/iarbre
-- Contact : contact@telescoop.fr
+- Contact : contact@telescoop.fr, iarbre@erasme.org
 
 ## Comprendre les données
 

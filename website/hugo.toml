@@ -13,6 +13,7 @@ title = "IA·rbre"
 weight = 1
 disableKinds = ['taxonomy', 'term', 'category']
 [params]
+contactEmails = ["contact@telescoop.fr", "iarbre@erasme.org"]
 [params.meta]
 Description = "Plateforme collaborative de production, d'analyse et de visualisation de données territoriales à l'aide d'IA pour accompagner les décisions en faveur de l'adaptation urbaine au changement climatique."
 Author = "IA·rbre"

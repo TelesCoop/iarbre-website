@@ -175,7 +175,7 @@
       <div class="vg-actions">
         <a href="{{ $report.RelPermalink }}" class="btn btn-gold">Rapport technique (PDF)</a>
         <a href="{{ $p.docs }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Méthode détaillée</a>
-        <a href="mailto:contact@telescoop.fr" class="btn btn-secondary">Nous contacter</a>
+        <a href="mailto:{{ delimit site.Params.contactEmails "," }}" class="btn btn-secondary">Nous contacter</a>
       </div>
     </div>
   </section>

@@ -13,7 +13,7 @@
     </nav>
 
     <div class="navbar-actions">
-      <a href="mailto:contact@telescoop.fr" class="btn btn-primary navbar-cta">
+      <a href="mailto:{{ delimit site.Params.contactEmails "," }}" class="btn btn-primary navbar-cta">
         Nous contacter
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@
       <a href="/actualites" class="navbar-drawer-link">Actualités</a>
       <a href="/tutoriels" class="navbar-drawer-link">Tutoriels</a>
       <a href="/#newsletter" class="navbar-drawer-link">Newsletter</a>
-      <a href="mailto:contact@telescoop.fr" class="btn btn-primary navbar-drawer-cta">
+      <a href="mailto:{{ delimit site.Params.contactEmails "," }}" class="btn btn-primary navbar-drawer-cta">
         Nous contacter
       </a>
     </nav>

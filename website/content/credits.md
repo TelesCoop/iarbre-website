@@ -67,6 +67,6 @@ Nous remercions chaleureusement :
 
 Pour toute question sur le projet ou proposition de collaboration :
 
-**Email :** contact@telescoop.fr  
+**Email :** [contact@telescoop.fr](mailto:contact@telescoop.fr), [iarbre@erasme.org](mailto:iarbre@erasme.org)  
 **Site web :** [iarbre.fr](https://iarbre.fr)
 

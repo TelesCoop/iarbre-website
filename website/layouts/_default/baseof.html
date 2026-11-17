@@ -108,7 +108,7 @@
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "email": "contact@telescoop.fr",
+              "email": {{ site.Params.contactEmails }},
               "contactType": "customer support",
               "availableLanguage": "French"
             },
@@ -210,10 +210,10 @@
               au changement climatique.
             </p>
             <div class="footer-contact">
-              <a href="mailto:contact@telescoop.fr" class="footer-contact-link"
-                >contact@telescoop.fr</a
-              >
+              {{ range site.Params.contactEmails }}
+              <a href="mailto:{{ . }}" class="footer-contact-link">{{ . }}</a>
               <span class="footer-contact-sep">·</span>
+              {{ end }}
               <span>Lyon, France</span>
             </div>
           </div>
@@ -223,6 +223,7 @@
               <p class="footer-col-label">Navigation</p>
               <nav class="footer-links">
                 <a href="/">Accueil</a>
+                <a href="/vegestrate/">Végéstrate</a>
                 <a href="/actualites">Actualités</a>
                 <a href="/a-propos">À propos</a>
                 <a href="/equipe">Équipe</a>
@@ -282,7 +283,8 @@
             © {{ now.Format "2006" }} IA·rbre. Tous droits réservés.
           </p>
           <p class="footer-funded">
-            Financé par la Caisse des Dépôts · Programme France&nbsp;2030
+            Financé par la Banque des Territoires, groupe Caisse des Dépôts, dans le cadre du programme France&nbsp;2030 -
+            <a href="https://www.banquedesterritoires.fr/laureats-tid-diat-la-creation-de-valeur-confirmee-la-replicabilite-en-chantier" target="_blank" rel="noopener noreferrer">lauréat DIAT, Démonstrateur IA frugale pour les Territoires</a>
           </p>
         </div>
       </div>

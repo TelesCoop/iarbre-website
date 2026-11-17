@@ -44,4 +44,4 @@ Le projet est actuellement déployé sur la **Métropole de Lyon**, territoire d
 
 ---
 
-*Le projet IA·rbre est soutenu par le plan France 2030 et financé par la Caisse des Dépôts.*
+*Le projet IA·rbre est soutenu par le plan France 2030 et financé par la Banque des Territoires, groupe Caisse des Dépôts.*
