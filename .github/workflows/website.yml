@@ -29,7 +29,7 @@ jobs:
           fi
 
       - name: Deploy website
-        uses: dawidd6/action-ansible-playbook@v2
+        uses: dawidd6/action-ansible-playbook@v9
         with:
           playbook: website.yml
           directory: deploy
