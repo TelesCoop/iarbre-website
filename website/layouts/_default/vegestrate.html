@@ -36,14 +36,7 @@
 
   <section class="vg-section" aria-label="Chiffres clés">
     <div class="vg-container">
-      <ul class="vg-figures">
-        {{ range $p.figures }}
-        <li class="vg-figure">
-          <span class="vg-figure-value">{{ .value }}</span>
-          <span class="vg-figure-text">{{ .text }}</span>
-        </li>
-        {{ end }}
-      </ul>
+      {{ partial "figures.html" $p.figures }}
     </div>
   </section>
 
