@@ -1,0 +1,29 @@
+{{ $slugs := dict "Végétation" "vegetation" "Chaleur" "chaleur" "Eau" "eau" }}
+<article class="us-card">
+  {{ with .themes }}
+  <ul class="us-tags" aria-label="Thématiques">
+    {{ range . }}
+    <li class="us-tag us-tag--{{ index $slugs . }}">{{ . }}</li>
+    {{ end }}
+  </ul>
+  {{ end }}
+  <h3 class="us-card-title">{{ .title }}</h3>
+  <p class="us-card-problem">{{ .problem }}</p>
+  {{ if or .data .who .result }}
+  <dl class="us-card-facts">
+    {{ with .data }}<div><dt>Donnée</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .who }}<div><dt>Qui</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .result }}<div><dt>Résultat</dt><dd>{{ . }}</dd></div>{{ end }}
+  </dl>
+  {{ end }}
+  {{ if or .link .contact }}
+  <div class="us-card-links">
+    {{ with .link }}
+    <a class="us-card-link" href="{{ . }}" aria-label="En savoir plus : {{ $.title }}"{{ if hasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>En savoir plus →</a>
+    {{ end }}
+    {{ if .contact }}
+    <a class="us-card-link" href="mailto:{{ delimit site.Params.contactEmails "," }}" aria-label="Contactez-nous : {{ .title }}">Contactez-nous →</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>

@@ -104,6 +104,11 @@
     if (event.target.tagName === "A") closeDrawer();
   });
 
+  // keep in sync with $navbar-collapse in main.scss
+  window.matchMedia("(min-width: 1025px)").addEventListener("change", (event) => {
+    if (event.matches) closeDrawer();
+  });
+
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && burger.getAttribute("aria-expanded") === "true") {
       closeDrawer();

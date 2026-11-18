@@ -1,0 +1,69 @@
+{{ define "main" }}
+{{ $page := . }}
+{{ $p := .Params }}
+{{ $contact := printf "mailto:%s" (delimit site.Params.contactEmails ",") }}
+
+<div class="vg-page">
+  <section class="vg-hero">
+    <div class="vg-container">
+      <span class="vg-eyebrow">{{ $p.header.eyebrow }}</span>
+      <h1 class="vg-title">{{ $p.header.title }}</h1>
+      <p class="vg-lead">{{ $page.RenderString $p.header.text }}</p>
+      <div class="vg-actions">
+        <a href="{{ $p.map }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Visiter la carte</a>
+        <a href="{{ $contact }}" class="btn btn-secondary btn-lg">Contactez-nous</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="vg-section" aria-label="Chiffres clés">
+    <div class="vg-container">
+      {{ partial "figures.html" $p.figures }}
+      <p class="us-figures-note">{{ $p.figures_note }}</p>
+    </div>
+  </section>
+
+  <section class="vg-section vg-section--tinted">
+    <div class="vg-container">
+      <h2 class="vg-section-title">{{ $p.intro.title }}</h2>
+      <p class="vg-section-text">{{ $page.RenderString $p.intro.text }}</p>
+    </div>
+  </section>
+
+  {{ range $i, $step := $p.steps }}
+  <section class="vg-section{{ if modBool $i 2 }}{{ else }} vg-section--tinted{{ end }}">
+    <div class="vg-container">
+      <span class="vg-eyebrow">Étape {{ add $i 1 }}</span>
+      <h2 class="vg-section-title">{{ $step.title }}</h2>
+      <p class="vg-section-text">{{ $step.text }}</p>
+      <div class="us-grid">
+        {{ range $step.stories }}{{ partial "usage-card.html" . }}{{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="vg-section">
+    <div class="vg-container">
+      <h2 class="vg-section-title">{{ $p.next.title }}</h2>
+      <p class="vg-section-text">{{ $p.next.text }}</p>
+      <div class="us-grid">
+        {{ range $p.next.items }}{{ partial "usage-card.html" . }}{{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="vg-section vg-section--dark">
+    <div class="vg-container">
+      <h2 class="vg-section-title">{{ $p.cta.title }}</h2>
+      <p class="vg-section-text">{{ $p.cta.text }}</p>
+      <div class="vg-actions">
+        <a href="{{ $p.map }}" class="btn btn-gold btn-lg" target="_blank" rel="noopener noreferrer">Visiter la carte</a>
+        <a href="{{ $contact }}" class="btn btn-secondary btn-lg">Contactez-nous</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+{{ partial "newsletter-section.html" . }}
+{{ end }}

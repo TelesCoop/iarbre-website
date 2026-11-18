@@ -1,0 +1,17 @@
+{{ with site.GetPage "/usages" }}
+{{ $featured := slice }}
+{{ range .Params.steps }}{{ range .stories }}{{ if .featured }}{{ $featured = $featured | append . }}{{ end }}{{ end }}{{ end }}
+{{ if $featured }}
+<section class="us-teaser" aria-labelledby="usages-teaser-title">
+  <span class="vg-eyebrow">Usages</span>
+  <h3 class="vg-section-title" id="usages-teaser-title">Ils l'utilisent déjà</h3>
+  <p class="vg-section-text">Services de la Métropole de Lyon, communes, Météo-France : les données IA·rbre servent déjà des politiques publiques bien réelles.</p>
+  <div class="us-grid">
+    {{ range $featured }}{{ partial "usage-card.html" . }}{{ end }}
+  </div>
+  <div class="vg-actions">
+    <a href="{{ .RelPermalink }}" class="btn btn-primary">Voir tous les usages</a>
+  </div>
+</section>
+{{ end }}
+{{ end }}
