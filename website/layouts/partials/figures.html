@@ -1,6 +1,7 @@
 <ul class="vg-figures">
-  {{ range . }}
+  {{ range .items }}
   <li class="vg-figure">
+    {{ with .picto }}{{ partial "picto.html" (dict "img" ($.page.Resources.Get .) "width" 240 "class" "vg-figure-picto") }}{{ end }}
     <span class="vg-figure-value">{{ .value }}</span>
     <span class="vg-figure-text">{{ .text }}</span>
   </li>

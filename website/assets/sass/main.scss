@@ -127,6 +127,7 @@ $transition-medium: 0.3s ease;
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: $navbar-height;
   font-size: 16px;
 }
 
@@ -143,10 +144,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  #newsletter {
-    scroll-margin-top: $navbar-height;
-  }
 }
 
 // =============================================================================
@@ -177,7 +174,6 @@ a {
 
 .btn:focus-visible,
 .navbar-cta:focus-visible,
-.vpb-cta:focus-visible,
 .newsletter-submit:focus-visible,
 .consortium-item:focus-visible {
   outline-offset: 3px;
@@ -253,7 +249,8 @@ h6 {
 // =============================================================================
 
 .navbar {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: $navbar-height;
   background-color: $white;
@@ -603,43 +600,6 @@ body.drawer-open {
     max-width: 640px;
   }
 
-  .vpb-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: $spacing-lg;
-    padding: 0.65rem 1.3rem;
-    border-radius: 999px;
-    background: $primary;
-    color: $white;
-    font-weight: 600;
-    font-size: $font-base;
-    text-decoration: none;
-    border: $border-thin solid $primary;
-    transition: background $transition-fast, border-color $transition-fast,
-      transform $transition-fast;
-    align-self: flex-start;
-
-    svg {
-      transition: transform $transition-medium;
-    }
-
-    &:hover {
-      background: $primary-900;
-      border-color: $primary-900;
-      color: $white;
-      text-decoration: none;
-
-      svg {
-      }
-    }
-
-    @media (min-width: $tablet) {
-      flex-shrink: 0;
-      align-self: flex-end;
-    }
-  }
-
   .vpb-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -923,10 +883,6 @@ body.drawer-open {
     }
   }
 
-  .about-block {
-    margin-bottom: $spacing-xxl * 2;
-  }
-
   .about-content {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
@@ -1061,28 +1017,6 @@ body.drawer-open {
     margin: 0;
     text-align: left;
     max-width: 720px;
-  }
-
-  .consortium-team-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    color: $primary;
-    font-weight: 600;
-    font-size: $font-base;
-    text-decoration: none;
-    align-self: flex-start;
-
-    svg {
-      transition: transform $transition-medium;
-    }
-
-    &:hover {
-      text-decoration: none;
-
-      svg {
-      }
-    }
   }
 
   .consortium-group {
@@ -1506,6 +1440,11 @@ body.drawer-open {
   @media (min-width: $mobile) {
     padding: $spacing-xxl * 1.25 $spacing-xxl;
   }
+}
+
+.newsletter-picto {
+  width: 72px;
+  height: auto;
 }
 
 .newsletter-eyebrow {
@@ -3275,6 +3214,13 @@ body.drawer-open {
   background: $primary-50;
 }
 
+.vg-figure-picto {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  align-self: center;
+}
+
 .vg-figure-value {
   font-size: $font-4xl;
   font-weight: 800;
@@ -3524,10 +3470,6 @@ body.drawer-open {
   margin: $spacing-md 0 0;
 }
 
-.us-teaser {
-  margin-bottom: $spacing-xxl;
-}
-
 .us-grid {
   display: grid;
   gap: $spacing-md;
@@ -3627,4 +3569,34 @@ body.drawer-open {
 .us-card-link {
   font-weight: 700;
   color: $primary;
+}
+
+.us-intro-picto {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  margin-top: $spacing-lg;
+  border-radius: $radius-lg;
+}
+
+.us-step-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-md $spacing-lg;
+}
+
+.us-step-picto {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+}
+
+.us-cta-picto {
+  display: block;
+  width: 120px;
+  height: auto;
+  margin-bottom: $spacing-md;
 }

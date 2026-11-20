@@ -1,6 +1,7 @@
 <section class="newsletter-section" id="newsletter">
   <div class="newsletter-container">
     <div class="newsletter-card">
+      {{ partial "picto.html" (dict "img" (resources.Get "images/newsletter.png") "width" 72 "class" "newsletter-picto") }}
       <span class="newsletter-eyebrow">Newsletter</span>
       <h2 class="newsletter-title">Suivez les avancées du projet&nbsp;IA·rbre.</h2>
       <p class="newsletter-text">

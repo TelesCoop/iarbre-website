@@ -36,7 +36,7 @@
 
   <section class="vg-section" aria-label="Chiffres clés">
     <div class="vg-container">
-      {{ partial "figures.html" $p.figures }}
+      {{ partial "figures.html" (dict "page" $page "items" $p.figures) }}
     </div>
   </section>
 

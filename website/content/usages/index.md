@@ -11,21 +11,27 @@ header:
 
 figures:
   - value: "150"
+    picto: "pictos/ok150.png"
     text: "visiteurs uniques par mois sur la carte, un outil destiné aux professionnels de l'urbanisme et du climat"
   - value: "4"
+    picto: "pictos/4directionsmetiers.png"
     text: "directions métiers qui travaillent ensemble : Plan Climat, Patrimoine végétal, Urbanisme et Cycle de l'Eau"
   - value: "5 min"
+    picto: "pictos/timing.png"
     text: "par visite en moyenne ; 80 visites par mois dépassent 3 minutes, certaines durent jusqu'à 2 h"
   - value: "SIG"
+    picto: "pictos/SIG.png"
     text: "Données également récupérées via des flux WFS, WMS et les rasters en accès direct pour être retravaillées dans les SIGs des services"
 figures_note: "Calques les plus consultés : vulnérabilité à la chaleur, confort thermique, ombre, et croisement plantabilité × vulnérabilité."
 
 intro:
+  picto: "pictos/dameok.png"
   title: "Une donnée pour les grands plans réglementaires comme le Plan Climat"
   text: "Toute intercommunalité de plus de 20 000 habitants doit adopter un [Plan Climat Air Énergie Territorial](/actualites/pcaet-agir-localement-pour-le-climat/) (PCAET) et le faire vivre en quatre temps : diagnostic, stratégie, programme d'actions, suivi. Les calques IA·rbre (plantabilité, vulnérabilité à la chaleur, inventaire du végétal [Végéstrate](/vegestrate/)) nourrissent chacune de ces étapes, et au-delà les documents d'urbanisme, le suivi de politiques publiques et les projets des communes."
 
 steps:
   - title: "Diagnostiquer"
+    picto: "pictos/etape1.png"
     text: "Comprendre où le territoire est vulnérable et où se trouve le végétal."
     stories:
       - title: "Cartographier la vulnérabilité à la chaleur, de jour comme de nuit"
@@ -49,6 +55,7 @@ steps:
         link: "/vegestrate/"
 
   - title: "Décider"
+    picto: "pictos/etape2.png"
     text: "Fixer des objectifs et des règles à partir d'un état des lieux chiffré."
     stories:
       - title: "Concevoir une aide à la végétalisation des espaces privés"
@@ -72,6 +79,7 @@ steps:
         link: "/vegestrate/"
 
   - title: "Agir"
+    picto: "pictos/etape3.png"
     text: "Choisir où intervenir, au plus près du terrain."
     stories:
       - title: "Prioriser la végétalisation des cours d'école"
@@ -96,6 +104,7 @@ steps:
         link: "/actualites/origine-calque-plantabilite/"
 
   - title: "Suivre"
+    picto: "pictos/etape4.png"
     text: "Mesurer les effets des politiques dans la durée."
     stories:
       - title: "Suivre l'évolution du végétal sur un mandat"
@@ -125,6 +134,7 @@ next:
       contact: true
 
 cta:
+  picto: "pictos/etsurvotreterritoire.png"
   title: "Et sur votre territoire ?"
   text: "Explorez la carte, ou contactez-nous pour en parler, que vous soyez à la Métropole de Lyon ou que vous souhaitiez reproduire IA·rbre sur un autre territoire."
 ---

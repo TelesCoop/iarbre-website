@@ -18,7 +18,7 @@
 
   <section class="vg-section" aria-label="Chiffres clés">
     <div class="vg-container">
-      {{ partial "figures.html" $p.figures }}
+      {{ partial "figures.html" (dict "page" $page "items" $p.figures) }}
       <p class="us-figures-note">{{ $p.figures_note }}</p>
     </div>
   </section>
@@ -27,15 +27,21 @@
     <div class="vg-container">
       <h2 class="vg-section-title">{{ $p.intro.title }}</h2>
       <p class="vg-section-text">{{ $page.RenderString $p.intro.text }}</p>
+      {{ partial "picto.html" (dict "img" ($page.Resources.Get $p.intro.picto) "width" 760 "class" "us-intro-picto") }}
     </div>
   </section>
 
   {{ range $i, $step := $p.steps }}
   <section class="vg-section{{ if modBool $i 2 }}{{ else }} vg-section--tinted{{ end }}">
     <div class="vg-container">
-      <span class="vg-eyebrow">Étape {{ add $i 1 }}</span>
-      <h2 class="vg-section-title">{{ $step.title }}</h2>
-      <p class="vg-section-text">{{ $step.text }}</p>
+      <div class="us-step-head">
+        <div>
+          <span class="vg-eyebrow">Étape {{ add $i 1 }}</span>
+          <h2 class="vg-section-title">{{ $step.title }}</h2>
+          <p class="vg-section-text">{{ $step.text }}</p>
+        </div>
+        {{ partial "picto.html" (dict "img" ($page.Resources.Get $step.picto) "width" 240 "class" "us-step-picto") }}
+      </div>
       <div class="us-grid">
         {{ range $step.stories }}{{ partial "usage-card.html" . }}{{ end }}
       </div>
@@ -55,6 +61,7 @@
 
   <section class="vg-section vg-section--dark">
     <div class="vg-container">
+      {{ partial "picto.html" (dict "img" ($page.Resources.Get $p.cta.picto) "width" 120 "class" "us-cta-picto") }}
       <h2 class="vg-section-title">{{ $p.cta.title }}</h2>
       <p class="vg-section-text">{{ $p.cta.text }}</p>
       <div class="vg-actions">

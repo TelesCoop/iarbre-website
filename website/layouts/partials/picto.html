@@ -1,0 +1,11 @@
+{{ with .img }}
+{{ $img := .Resize (printf "%dx webp" (mul $.width 2)) }}
+<img
+  class="{{ $.class }}"
+  src="{{ $img.RelPermalink }}"
+  width="{{ $img.Width }}"
+  height="{{ $img.Height }}"
+  loading="lazy"
+  alt=""
+/>
+{{ end }}
